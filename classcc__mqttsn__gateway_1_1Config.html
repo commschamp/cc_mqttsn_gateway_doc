@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cc_mqttsn_gateway</b></li><li class="navelem"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html">Config</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecc__mqttsn__gateway.html">cc_mqttsn_gateway</a></li><li class="navelem"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html">Config</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -90,24 +90,34 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa835ab0284397c3ad1177ee5309754d8"><td class="memItemLeft" align="right" valign="top">typedef std::multimap&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aa835ab0284397c3ad1177ee5309754d8">ConfigMap</a></td></tr>
-<tr class="memdesc:aa835ab0284397c3ad1177ee5309754d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full configuration map.  <a href="classcc__mqttsn__gateway_1_1Config.html#aa835ab0284397c3ad1177ee5309754d8">More...</a><br /></td></tr>
-<tr class="separator:aa835ab0284397c3ad1177ee5309754d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af391bf10036dc119d62418ecfafeed05"><td class="memItemLeft" align="right" valign="top"><a id="af391bf10036dc119d62418ecfafeed05"></a>
-typedef std::vector&lt; std::uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#af391bf10036dc119d62418ecfafeed05">BinaryData</a></td></tr>
-<tr class="memdesc:af391bf10036dc119d62418ecfafeed05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of buffer that contains binary data. <br /></td></tr>
-<tr class="separator:af391bf10036dc119d62418ecfafeed05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbbd617208842508ed36fa7f9b71e22"><td class="memItemLeft" align="right" valign="top"><a id="aefbbd617208842508ed36fa7f9b71e22"></a>
-typedef std::vector&lt; <a class="el" href="structcc__mqttsn__gateway_1_1Config_1_1PredefinedTopicInfo.html">PredefinedTopicInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aefbbd617208842508ed36fa7f9b71e22">PredefinedTopicsList</a></td></tr>
-<tr class="memdesc:aefbbd617208842508ed36fa7f9b71e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of list containing predefined topics. <br /></td></tr>
-<tr class="separator:aefbbd617208842508ed36fa7f9b71e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5976c5232c7d0fd9712853762b81c5e"><td class="memItemLeft" align="right" valign="top"><a id="ab5976c5232c7d0fd9712853762b81c5e"></a>
-typedef std::vector&lt; <a class="el" href="structcc__mqttsn__gateway_1_1Config_1_1AuthInfo.html">AuthInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d0fd9712853762b81c5e">AuthInfosList</a></td></tr>
-<tr class="memdesc:ab5976c5232c7d0fd9712853762b81c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of list containing authentication information for multiple clients. <br /></td></tr>
-<tr class="separator:ab5976c5232c7d0fd9712853762b81c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3023b0c62d1d9d54ad40b806eaa9422d"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; std::uint16_t, std::uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a3023b0c62d1d9d54ad40b806eaa9422d">TopicIdsRange</a></td></tr>
-<tr class="memdesc:a3023b0c62d1d9d54ad40b806eaa9422d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range of topic IDs.  <a href="classcc__mqttsn__gateway_1_1Config.html#a3023b0c62d1d9d54ad40b806eaa9422d">More...</a><br /></td></tr>
-<tr class="separator:a3023b0c62d1d9d54ad40b806eaa9422d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebe15b47e134b2ecbecee68c9a82c75"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aeebe15b47e134b2ecbecee68c9a82c75">ClientConnectionType</a> { <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aeebe15b47e134b2ecbecee68c9a82c75a2dd2f377344549c332f99cd44f691caa">ClientConnectionType_Udp</a>
+, <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aeebe15b47e134b2ecbecee68c9a82c75aef52e0879c85e7f921ff12e5d3ed2c3f">ClientConnectionType_ValuesLimit</a>
+ }</td></tr>
+<tr class="memdesc:aeebe15b47e134b2ecbecee68c9a82c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client I/O socket connection type.  <a href="classcc__mqttsn__gateway_1_1Config.html#aeebe15b47e134b2ecbecee68c9a82c75">More...</a><br /></td></tr>
+<tr class="separator:aeebe15b47e134b2ecbecee68c9a82c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c4efb1a1b3bb86893cb18021a294b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac1c4efb1a1b3bb86893cb18021a294b8">BrokerConnectionType</a> { <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac1c4efb1a1b3bb86893cb18021a294b8a5c7f8e41a7da39ba0ce504859ca1a92a">BrokerConnectionType_Tcp</a>
+, <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac1c4efb1a1b3bb86893cb18021a294b8ae5d0921910a793f22f037f7f2d9f1e37">BrokerConnectionType_ValuesLimit</a>
+ }</td></tr>
+<tr class="memdesc:ac1c4efb1a1b3bb86893cb18021a294b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broker I/O socket connection type.  <a href="classcc__mqttsn__gateway_1_1Config.html#ac1c4efb1a1b3bb86893cb18021a294b8">More...</a><br /></td></tr>
+<tr class="separator:ac1c4efb1a1b3bb86893cb18021a294b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52aecd7c035932adbf1b837ab55c9827"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a52aecd7c035932adbf1b837ab55c9827">ConfigMap</a> = std::multimap&lt; std::string, std::string &gt;</td></tr>
+<tr class="memdesc:a52aecd7c035932adbf1b837ab55c9827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full configuration map.  <a href="classcc__mqttsn__gateway_1_1Config.html#a52aecd7c035932adbf1b837ab55c9827">More...</a><br /></td></tr>
+<tr class="separator:a52aecd7c035932adbf1b837ab55c9827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aebbf219b8938af39003f510c76a3a9"><td class="memItemLeft" align="right" valign="top"><a id="a2aebbf219b8938af39003f510c76a3a9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a2aebbf219b8938af39003f510c76a3a9">BinaryData</a> = std::vector&lt; std::uint8_t &gt;</td></tr>
+<tr class="memdesc:a2aebbf219b8938af39003f510c76a3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of buffer that contains binary data. <br /></td></tr>
+<tr class="separator:a2aebbf219b8938af39003f510c76a3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d56b92f19a63e0da77bd1676bbbf9fb"><td class="memItemLeft" align="right" valign="top"><a id="a1d56b92f19a63e0da77bd1676bbbf9fb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a1d56b92f19a63e0da77bd1676bbbf9fb">PredefinedTopicsList</a> = std::vector&lt; <a class="el" href="structcc__mqttsn__gateway_1_1Config_1_1PredefinedTopicInfo.html">PredefinedTopicInfo</a> &gt;</td></tr>
+<tr class="memdesc:a1d56b92f19a63e0da77bd1676bbbf9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of list containing predefined topics. <br /></td></tr>
+<tr class="separator:a1d56b92f19a63e0da77bd1676bbbf9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b73f387b2c4ac6a03798d384ab00cf"><td class="memItemLeft" align="right" valign="top"><a id="a85b73f387b2c4ac6a03798d384ab00cf"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a85b73f387b2c4ac6a03798d384ab00cf">AuthInfosList</a> = std::vector&lt; <a class="el" href="structcc__mqttsn__gateway_1_1Config_1_1AuthInfo.html">AuthInfo</a> &gt;</td></tr>
+<tr class="memdesc:a85b73f387b2c4ac6a03798d384ab00cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of list containing authentication information for multiple clients. <br /></td></tr>
+<tr class="separator:a85b73f387b2c4ac6a03798d384ab00cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cdfe749026d7dcf29b789ad227a79e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a90cdfe749026d7dcf29b789ad227a79e">TopicIdsRange</a> = std::pair&lt; std::uint16_t, std::uint16_t &gt;</td></tr>
+<tr class="memdesc:a90cdfe749026d7dcf29b789ad227a79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range of topic IDs.  <a href="classcc__mqttsn__gateway_1_1Config.html#a90cdfe749026d7dcf29b789ad227a79e">More...</a><br /></td></tr>
+<tr class="separator:a90cdfe749026d7dcf29b789ad227a79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -123,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aaeca1e557ca787f0a42688a0203f6135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration from input stream.  <a href="classcc__mqttsn__gateway_1_1Config.html#aaeca1e557ca787f0a42688a0203f6135">More...</a><br /></td></tr>
 <tr class="separator:aaeca1e557ca787f0a42688a0203f6135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab667ca6ba24f5cd4c5e5399ba6dc7fc4"><td class="memItemLeft" align="right" valign="top"><a id="ab667ca6ba24f5cd4c5e5399ba6dc7fc4"></a>
-const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aa835ab0284397c3ad1177ee5309754d8">ConfigMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab667ca6ba24f5cd4c5e5399ba6dc7fc4">configMap</a> () const</td></tr>
+const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a52aecd7c035932adbf1b837ab55c9827">ConfigMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab667ca6ba24f5cd4c5e5399ba6dc7fc4">configMap</a> () const</td></tr>
 <tr class="memdesc:ab667ca6ba24f5cd4c5e5399ba6dc7fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access to the full configuration map. <br /></td></tr>
 <tr class="separator:ab667ca6ba24f5cd4c5e5399ba6dc7fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac896ea4bfc3c3fab600d299160dba990"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac896ea4bfc3c3fab600d299160dba990">gatewayId</a> () const</td></tr>
@@ -148,14 +158,14 @@ const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aa835ab0284397
 <tr class="memdesc:a28e64dd0a14c5408eca3932d3ee6356e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get limit for max number of messages to accumulate for sleeping clients.  <a href="classcc__mqttsn__gateway_1_1Config.html#a28e64dd0a14c5408eca3932d3ee6356e">More...</a><br /></td></tr>
 <tr class="separator:a28e64dd0a14c5408eca3932d3ee6356e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d9f883ccc0f495b2adaecd417ecdce0"><td class="memItemLeft" align="right" valign="top"><a id="a8d9f883ccc0f495b2adaecd417ecdce0"></a>
-const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aefbbd617208842508ed36fa7f9b71e22">PredefinedTopicsList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a8d9f883ccc0f495b2adaecd417ecdce0">predefinedTopics</a> () const</td></tr>
+const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a1d56b92f19a63e0da77bd1676bbbf9fb">PredefinedTopicsList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a8d9f883ccc0f495b2adaecd417ecdce0">predefinedTopics</a> () const</td></tr>
 <tr class="memdesc:a8d9f883ccc0f495b2adaecd417ecdce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access to the list of predefined topics. <br /></td></tr>
 <tr class="separator:a8d9f883ccc0f495b2adaecd417ecdce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9a33bb84e9aa55779ad5b4a84c23a3c"><td class="memItemLeft" align="right" valign="top"><a id="ac9a33bb84e9aa55779ad5b4a84c23a3c"></a>
-const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d0fd9712853762b81c5e">AuthInfosList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac9a33bb84e9aa55779ad5b4a84c23a3c">authInfos</a> () const</td></tr>
+const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a85b73f387b2c4ac6a03798d384ab00cf">AuthInfosList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac9a33bb84e9aa55779ad5b4a84c23a3c">authInfos</a> () const</td></tr>
 <tr class="memdesc:ac9a33bb84e9aa55779ad5b4a84c23a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access to list of authentication informations. <br /></td></tr>
 <tr class="separator:ac9a33bb84e9aa55779ad5b4a84c23a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fc176f8d5d3a32764fdaad0bc8288c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a3023b0c62d1d9d54ad40b806eaa9422d">TopicIdsRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a3fc176f8d5d3a32764fdaad0bc8288c6">topicIdAllocRange</a> () const</td></tr>
+<tr class="memitem:a3fc176f8d5d3a32764fdaad0bc8288c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a90cdfe749026d7dcf29b789ad227a79e">TopicIdsRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a3fc176f8d5d3a32764fdaad0bc8288c6">topicIdAllocRange</a> () const</td></tr>
 <tr class="memdesc:a3fc176f8d5d3a32764fdaad0bc8288c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get range of allowed topic IDs for allocation.  <a href="classcc__mqttsn__gateway_1_1Config.html#a3fc176f8d5d3a32764fdaad0bc8288c6">More...</a><br /></td></tr>
 <tr class="separator:a3fc176f8d5d3a32764fdaad0bc8288c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a710a6985da49a7922f775a8df875d9d3"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a710a6985da49a7922f775a8df875d9d3">brokerTcpHostAddress</a> () const</td></tr>
@@ -164,16 +174,25 @@ const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d
 <tr class="memitem:a5ec2026d212e0f2cbc592abaf2e6f78c"><td class="memItemLeft" align="right" valign="top">std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a5ec2026d212e0f2cbc592abaf2e6f78c">brokerTcpHostPort</a> () const</td></tr>
 <tr class="memdesc:a5ec2026d212e0f2cbc592abaf2e6f78c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get TCP/IP port of the broker.  <a href="classcc__mqttsn__gateway_1_1Config.html#a5ec2026d212e0f2cbc592abaf2e6f78c">More...</a><br /></td></tr>
 <tr class="separator:a5ec2026d212e0f2cbc592abaf2e6f78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0a3b3025cd7e78b747622fc2006d7a"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ade0a3b3025cd7e78b747622fc2006d7a">logFile</a> () const</td></tr>
+<tr class="memdesc:ade0a3b3025cd7e78b747622fc2006d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get log file.  <a href="classcc__mqttsn__gateway_1_1Config.html#ade0a3b3025cd7e78b747622fc2006d7a">More...</a><br /></td></tr>
+<tr class="separator:ade0a3b3025cd7e78b747622fc2006d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c51098a26f511d7f32e92d1626dafb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aeebe15b47e134b2ecbecee68c9a82c75">ClientConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a11c51098a26f511d7f32e92d1626dafb">clientConnectionType</a> () const</td></tr>
+<tr class="memdesc:a11c51098a26f511d7f32e92d1626dafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client side I/O socket connection type.  <a href="classcc__mqttsn__gateway_1_1Config.html#a11c51098a26f511d7f32e92d1626dafb">More...</a><br /></td></tr>
+<tr class="separator:a11c51098a26f511d7f32e92d1626dafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef758bcbc3d506f96773915eedecab29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac1c4efb1a1b3bb86893cb18021a294b8">BrokerConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aef758bcbc3d506f96773915eedecab29">brokerConnectionType</a> () const</td></tr>
+<tr class="memdesc:aef758bcbc3d506f96773915eedecab29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get broker side I/O socket connection type.  <a href="classcc__mqttsn__gateway_1_1Config.html#aef758bcbc3d506f96773915eedecab29">More...</a><br /></td></tr>
+<tr class="separator:aef758bcbc3d506f96773915eedecab29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa835ab0284397c3ad1177ee5309754d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa835ab0284397c3ad1177ee5309754d8">&#9670;&nbsp;</a></span>ConfigMap</h2>
+<a id="a52aecd7c035932adbf1b837ab55c9827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52aecd7c035932adbf1b837ab55c9827">&#9670;&nbsp;</a></span>ConfigMap</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::multimap&lt;std::string, std::string&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aa835ab0284397c3ad1177ee5309754d8">cc_mqttsn_gateway::Config::ConfigMap</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a52aecd7c035932adbf1b837ab55c9827">cc_mqttsn_gateway::Config::ConfigMap</a> =  std::multimap&lt;std::string, std::string&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,20 +202,65 @@ const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d
 
 </div>
 </div>
-<a id="a3023b0c62d1d9d54ad40b806eaa9422d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3023b0c62d1d9d54ad40b806eaa9422d">&#9670;&nbsp;</a></span>TopicIdsRange</h2>
+<a id="a90cdfe749026d7dcf29b789ad227a79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cdfe749026d7dcf29b789ad227a79e">&#9670;&nbsp;</a></span>TopicIdsRange</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;std::uint16_t, std::uint16_t&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a3023b0c62d1d9d54ad40b806eaa9422d">cc_mqttsn_gateway::Config::TopicIdsRange</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a90cdfe749026d7dcf29b789ad227a79e">cc_mqttsn_gateway::Config::TopicIdsRange</a> =  std::pair&lt;std::uint16_t, std::uint16_t&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Range of topic IDs. </p>
 <p>First element of the pair is minimal ID, and second element of the pair is maximal ID. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ac1c4efb1a1b3bb86893cb18021a294b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c4efb1a1b3bb86893cb18021a294b8">&#9670;&nbsp;</a></span>BrokerConnectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac1c4efb1a1b3bb86893cb18021a294b8">cc_mqttsn_gateway::Config::BrokerConnectionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Broker I/O socket connection type. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac1c4efb1a1b3bb86893cb18021a294b8a5c7f8e41a7da39ba0ce504859ca1a92a"></a>BrokerConnectionType_Tcp&#160;</td><td class="fielddoc"><p>TCP/IP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1c4efb1a1b3bb86893cb18021a294b8ae5d0921910a793f22f037f7f2d9f1e37"></a>BrokerConnectionType_ValuesLimit&#160;</td><td class="fielddoc"><p>Limit to available values, must be last. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aeebe15b47e134b2ecbecee68c9a82c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeebe15b47e134b2ecbecee68c9a82c75">&#9670;&nbsp;</a></span>ClientConnectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aeebe15b47e134b2ecbecee68c9a82c75">cc_mqttsn_gateway::Config::ClientConnectionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Client I/O socket connection type. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aeebe15b47e134b2ecbecee68c9a82c75a2dd2f377344549c332f99cd44f691caa"></a>ClientConnectionType_Udp&#160;</td><td class="fielddoc"><p>UDP/IP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeebe15b47e134b2ecbecee68c9a82c75aef52e0879c85e7f921ff12e5d3ed2c3f"></a>ClientConnectionType_ValuesLimit&#160;</td><td class="fielddoc"><p>Limit to available values, must be last. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -218,6 +282,26 @@ const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d
 
 <p>Get advertise period. </p>
 <p>Default value is <b>900</b> seconds (15 minutes). </p><dl class="section return"><dt>Returns</dt><dd>Advertise period in <b>seconds</b>. </dd></dl>
+
+</div>
+</div>
+<a id="aef758bcbc3d506f96773915eedecab29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef758bcbc3d506f96773915eedecab29">&#9670;&nbsp;</a></span>brokerConnectionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac1c4efb1a1b3bb86893cb18021a294b8">BrokerConnectionType</a> cc_mqttsn_gateway::Config::brokerConnectionType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get broker side I/O socket connection type. </p>
+<p>Default value is <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac1c4efb1a1b3bb86893cb18021a294b8a5c7f8e41a7da39ba0ce504859ca1a92a">BrokerConnectionType_Tcp</a> </p>
 
 </div>
 </div>
@@ -261,6 +345,26 @@ const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d
 
 </div>
 </div>
+<a id="a11c51098a26f511d7f32e92d1626dafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c51098a26f511d7f32e92d1626dafb">&#9670;&nbsp;</a></span>clientConnectionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aeebe15b47e134b2ecbecee68c9a82c75">ClientConnectionType</a> cc_mqttsn_gateway::Config::clientConnectionType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get client side I/O socket connection type. </p>
+<p>Default value is <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aeebe15b47e134b2ecbecee68c9a82c75a2dd2f377344549c332f99cd44f691caa">ClientConnectionType_Udp</a> </p>
+
+</div>
+</div>
 <a id="ad92f532edb288f0d8ad658c6b770a538"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad92f532edb288f0d8ad658c6b770a538">&#9670;&nbsp;</a></span>defaultClientId()</h2>
 
@@ -298,6 +402,26 @@ const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d
 
 <p>Get gateway numeric ID. </p>
 <p>Default value is <b>0</b>. </p><dl class="section return"><dt>Returns</dt><dd>Numeric gateway ID. </dd></dl>
+
+</div>
+</div>
+<a id="ade0a3b3025cd7e78b747622fc2006d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0a3b3025cd7e78b747622fc2006d7a">&#9670;&nbsp;</a></span>logFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; cc_mqttsn_gateway::Config::logFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get log file. </p>
+<p>Expected to be an aboslute file path or one of the special values: "stdout", "stderr". Defaults to "stdout" </p>
 
 </div>
 </div>
@@ -414,7 +538,7 @@ const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a3023b0c62d1d9d54ad40b806eaa9422d">TopicIdsRange</a> cc_mqttsn_gateway::Config::topicIdAllocRange </td>
+          <td class="memname"><a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a90cdfe749026d7dcf29b789ad227a79e">TopicIdsRange</a> cc_mqttsn_gateway::Config::topicIdAllocRange </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -433,7 +557,7 @@ const <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ab5976c5232c7d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 14:02:11 for MQTT-SN Gateway Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

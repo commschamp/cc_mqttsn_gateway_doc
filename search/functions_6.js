@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['predefinedtopics_232',['predefinedTopics',['../classcc__mqttsn__gateway_1_1Config.html#a8d9f883ccc0f495b2adaecd417ecdce0',1,'cc_mqttsn_gateway::Config']]],
-  ['pubonlykeepalive_233',['pubOnlyKeepAlive',['../classcc__mqttsn__gateway_1_1Config.html#a715e1cf347c9d0008e32d2db67b1a5dc',1,'cc_mqttsn_gateway::Config']]]
+  ['logfile_306',['logFile',['../classcc__mqttsn__gateway_1_1Config.html#ade0a3b3025cd7e78b747622fc2006d7a',1,'cc_mqttsn_gateway::Config']]]
 ];

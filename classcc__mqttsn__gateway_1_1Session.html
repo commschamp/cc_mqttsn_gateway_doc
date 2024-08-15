@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cc_mqttsn_gateway</b></li><li class="navelem"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html">Session</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecc__mqttsn__gateway.html">cc_mqttsn_gateway</a></li><li class="navelem"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html">Session</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,34 +80,46 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a39ed7f3049c3e84bf342d138d5d3d354"><td class="memItemLeft" align="right" valign="top"><a id="a39ed7f3049c3e84bf342d138d5d3d354"></a>
-typedef std::vector&lt; std::uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a39ed7f3049c3e84bf342d138d5d3d354">BinaryData</a></td></tr>
-<tr class="memdesc:a39ed7f3049c3e84bf342d138d5d3d354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for buffer of binary data. <br /></td></tr>
-<tr class="separator:a39ed7f3049c3e84bf342d138d5d3d354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa54812b289e8d1a3e75cd4bb35585588"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; std::string, <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a39ed7f3049c3e84bf342d138d5d3d354">BinaryData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aa54812b289e8d1a3e75cd4bb35585588">AuthInfo</a></td></tr>
-<tr class="memdesc:aa54812b289e8d1a3e75cd4bb35585588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of authentication information.  <a href="classcc__mqttsn__gateway_1_1Session.html#aa54812b289e8d1a3e75cd4bb35585588">More...</a><br /></td></tr>
-<tr class="separator:aa54812b289e8d1a3e75cd4bb35585588"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a768acb036f31b536cf3bbce83604418e"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(unsigned value)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a768acb036f31b536cf3bbce83604418e">NextTickProgramReqCb</a></td></tr>
-<tr class="memdesc:a768acb036f31b536cf3bbce83604418e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request new time measurement.  <a href="classcc__mqttsn__gateway_1_1Session.html#a768acb036f31b536cf3bbce83604418e">More...</a><br /></td></tr>
-<tr class="separator:a768acb036f31b536cf3bbce83604418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a621a439ba46b7e1b3fcb110e7461c026"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; unsigned()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a621a439ba46b7e1b3fcb110e7461c026">CancelTickWaitReqCb</a></td></tr>
-<tr class="memdesc:a621a439ba46b7e1b3fcb110e7461c026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to cancel existing time measurement.  <a href="classcc__mqttsn__gateway_1_1Session.html#a621a439ba46b7e1b3fcb110e7461c026">More...</a><br /></td></tr>
-<tr class="separator:a621a439ba46b7e1b3fcb110e7461c026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96348a485d2001bda6b1903375053505"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const std::uint8_t *buf, std::size_t bufSize)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a96348a485d2001bda6b1903375053505">SendDataReqCb</a></td></tr>
-<tr class="memdesc:a96348a485d2001bda6b1903375053505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request delivery of serialised message to the client or broker.  <a href="classcc__mqttsn__gateway_1_1Session.html#a96348a485d2001bda6b1903375053505">More...</a><br /></td></tr>
-<tr class="separator:a96348a485d2001bda6b1903375053505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca29420d1dac3ae6dd4c94f0a5b707a8"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aca29420d1dac3ae6dd4c94f0a5b707a8">TerminationReqCb</a></td></tr>
-<tr class="memdesc:aca29420d1dac3ae6dd4c94f0a5b707a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request session termination.  <a href="classcc__mqttsn__gateway_1_1Session.html#aca29420d1dac3ae6dd4c94f0a5b707a8">More...</a><br /></td></tr>
-<tr class="separator:aca29420d1dac3ae6dd4c94f0a5b707a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace57f8e8eaced5ec466642541f859abe"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ace57f8e8eaced5ec466642541f859abe">BrokerReconnectReqCb</a></td></tr>
-<tr class="memdesc:ace57f8e8eaced5ec466642541f859abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request reconnection to the broker.  <a href="classcc__mqttsn__gateway_1_1Session.html#ace57f8e8eaced5ec466642541f859abe">More...</a><br /></td></tr>
-<tr class="separator:ace57f8e8eaced5ec466642541f859abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536d63dff93e9136c8c3c0315ff3dfa0"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const std::string &amp;clientId)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a536d63dff93e9136c8c3c0315ff3dfa0">ClientConnectedReportCb</a></td></tr>
-<tr class="memdesc:a536d63dff93e9136c8c3c0315ff3dfa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to report client ID of the newly connected MQTT-SN client.  <a href="classcc__mqttsn__gateway_1_1Session.html#a536d63dff93e9136c8c3c0315ff3dfa0">More...</a><br /></td></tr>
-<tr class="separator:a536d63dff93e9136c8c3c0315ff3dfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab00bbf38ff8dfc6e908cb133301abb33"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aa54812b289e8d1a3e75cd4bb35585588">AuthInfo</a>(const std::string &amp;clientId)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ab00bbf38ff8dfc6e908cb133301abb33">AuthInfoReqCb</a></td></tr>
-<tr class="memdesc:ab00bbf38ff8dfc6e908cb133301abb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request authentication information of the client that is trying connect.  <a href="classcc__mqttsn__gateway_1_1Session.html#ab00bbf38ff8dfc6e908cb133301abb33">More...</a><br /></td></tr>
-<tr class="separator:ab00bbf38ff8dfc6e908cb133301abb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8708e95121d9ddbfec36c7173a4fb1dd"><td class="memItemLeft" align="right" valign="top"><a id="a8708e95121d9ddbfec36c7173a4fb1dd"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a8708e95121d9ddbfec36c7173a4fb1dd">BinaryData</a> = std::vector&lt; std::uint8_t &gt;</td></tr>
+<tr class="memdesc:a8708e95121d9ddbfec36c7173a4fb1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for buffer of binary data. <br /></td></tr>
+<tr class="separator:a8708e95121d9ddbfec36c7173a4fb1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ce4af1ec9bd9368cdbe082537cac6e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a18ce4af1ec9bd9368cdbe082537cac6e">AuthInfo</a> = std::pair&lt; std::string, <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a8708e95121d9ddbfec36c7173a4fb1dd">BinaryData</a> &gt;</td></tr>
+<tr class="memdesc:a18ce4af1ec9bd9368cdbe082537cac6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of authentication information.  <a href="classcc__mqttsn__gateway_1_1Session.html#a18ce4af1ec9bd9368cdbe082537cac6e">More...</a><br /></td></tr>
+<tr class="separator:a18ce4af1ec9bd9368cdbe082537cac6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3c1b6e8a7f34189f976958e72773c0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4d3c1b6e8a7f34189f976958e72773c0">NextTickProgramReqCb</a> = std::function&lt; void(unsigned value)&gt;</td></tr>
+<tr class="memdesc:a4d3c1b6e8a7f34189f976958e72773c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request new time measurement.  <a href="classcc__mqttsn__gateway_1_1Session.html#a4d3c1b6e8a7f34189f976958e72773c0">More...</a><br /></td></tr>
+<tr class="separator:a4d3c1b6e8a7f34189f976958e72773c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4ce5a131367e564c4cb629585e92b3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4b4ce5a131367e564c4cb629585e92b3">CancelTickWaitReqCb</a> = std::function&lt; unsigned()&gt;</td></tr>
+<tr class="memdesc:a4b4ce5a131367e564c4cb629585e92b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to cancel existing time measurement.  <a href="classcc__mqttsn__gateway_1_1Session.html#a4b4ce5a131367e564c4cb629585e92b3">More...</a><br /></td></tr>
+<tr class="separator:a4b4ce5a131367e564c4cb629585e92b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cde78d651a8139fbe8a6cc03809023"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a91cde78d651a8139fbe8a6cc03809023">ClientSendDataReqCb</a> = std::function&lt; void(const std::uint8_t *buf, std::size_t bufSize, unsigned broadcastRadius)&gt;</td></tr>
+<tr class="memdesc:a91cde78d651a8139fbe8a6cc03809023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request delivery of serialised message to the client.  <a href="classcc__mqttsn__gateway_1_1Session.html#a91cde78d651a8139fbe8a6cc03809023">More...</a><br /></td></tr>
+<tr class="separator:a91cde78d651a8139fbe8a6cc03809023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8a6df2b5852e200b70ca031e0446aa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ade8a6df2b5852e200b70ca031e0446aa">BrokerSendDataReqCb</a> = std::function&lt; void(const std::uint8_t *buf, std::size_t bufSize)&gt;</td></tr>
+<tr class="memdesc:ade8a6df2b5852e200b70ca031e0446aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request delivery of serialised message to the broker.  <a href="classcc__mqttsn__gateway_1_1Session.html#ade8a6df2b5852e200b70ca031e0446aa">More...</a><br /></td></tr>
+<tr class="separator:ade8a6df2b5852e200b70ca031e0446aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61bf51eecaa90806ce08c821be078b0a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a61bf51eecaa90806ce08c821be078b0a">TerminationReqCb</a> = std::function&lt; void()&gt;</td></tr>
+<tr class="memdesc:a61bf51eecaa90806ce08c821be078b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request session termination.  <a href="classcc__mqttsn__gateway_1_1Session.html#a61bf51eecaa90806ce08c821be078b0a">More...</a><br /></td></tr>
+<tr class="separator:a61bf51eecaa90806ce08c821be078b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c1eae248902824f4871d1680e7c6e4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a13c1eae248902824f4871d1680e7c6e4">BrokerReconnectReqCb</a> = std::function&lt; void()&gt;</td></tr>
+<tr class="memdesc:a13c1eae248902824f4871d1680e7c6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request reconnection to the broker.  <a href="classcc__mqttsn__gateway_1_1Session.html#a13c1eae248902824f4871d1680e7c6e4">More...</a><br /></td></tr>
+<tr class="separator:a13c1eae248902824f4871d1680e7c6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae491947b50b43e3b136a727d9374f2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#afae491947b50b43e3b136a727d9374f2">ClientConnectedReportCb</a> = std::function&lt; void(const std::string &amp;clientId)&gt;</td></tr>
+<tr class="memdesc:afae491947b50b43e3b136a727d9374f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to report client ID of the newly connected MQTT-SN client.  <a href="classcc__mqttsn__gateway_1_1Session.html#afae491947b50b43e3b136a727d9374f2">More...</a><br /></td></tr>
+<tr class="separator:afae491947b50b43e3b136a727d9374f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ef7fa091dd09f74b5504f4f21fa6ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#af1ef7fa091dd09f74b5504f4f21fa6ef">AuthInfoReqCb</a> = std::function&lt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a18ce4af1ec9bd9368cdbe082537cac6e">AuthInfo</a>(const std::string &amp;clientId)&gt;</td></tr>
+<tr class="memdesc:af1ef7fa091dd09f74b5504f4f21fa6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request authentication information of the client that is trying connect.  <a href="classcc__mqttsn__gateway_1_1Session.html#af1ef7fa091dd09f74b5504f4f21fa6ef">More...</a><br /></td></tr>
+<tr class="separator:af1ef7fa091dd09f74b5504f4f21fa6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6e644c040bb2f3bd16fab845f61fc2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4a6e644c040bb2f3bd16fab845f61fc2">ErrorReportCb</a> = std::function&lt; void(const char *msg)&gt;</td></tr>
+<tr class="memdesc:a4a6e644c040bb2f3bd16fab845f61fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the callback used to report detected errors.  <a href="classcc__mqttsn__gateway_1_1Session.html#a4a6e644c040bb2f3bd16fab845f61fc2">More...</a><br /></td></tr>
+<tr class="separator:a4a6e644c040bb2f3bd16fab845f61fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3eeb173021e2bebd5edbbcb4e58c7d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a7f3eeb173021e2bebd5edbbcb4e58c7d">FwdEncSessionCreatedReportCb</a> = std::function&lt; bool(<a class="el" href="classcc__mqttsn__gateway_1_1Session.html">Session</a> *session)&gt;</td></tr>
+<tr class="memdesc:a7f3eeb173021e2bebd5edbbcb4e58c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to notify the application about forwarding encapsulation session being created.  <a href="classcc__mqttsn__gateway_1_1Session.html#a7f3eeb173021e2bebd5edbbcb4e58c7d">More...</a><br /></td></tr>
+<tr class="separator:a7f3eeb173021e2bebd5edbbcb4e58c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75b3f3fbb8d555302375a2ae25b82e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ad75b3f3fbb8d555302375a2ae25b82e2">FwdEncSessionDeletedReportCb</a> = std::function&lt; void(<a class="el" href="classcc__mqttsn__gateway_1_1Session.html">Session</a> *session)&gt;</td></tr>
+<tr class="memdesc:ad75b3f3fbb8d555302375a2ae25b82e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to notify the application about forwarding encapsulation session being deleted.  <a href="classcc__mqttsn__gateway_1_1Session.html#ad75b3f3fbb8d555302375a2ae25b82e2">More...</a><br /></td></tr>
+<tr class="separator:ad75b3f3fbb8d555302375a2ae25b82e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -119,48 +131,81 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a2be3a985fad6e8673acfe5103fd0a39b">~Session</a> ()</td></tr>
 <tr class="memdesc:a2be3a985fad6e8673acfe5103fd0a39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a2be3a985fad6e8673acfe5103fd0a39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03abf3c8beaad947016bea6a5e66d85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ad03abf3c8beaad947016bea6a5e66d85">setNextTickProgramReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a768acb036f31b536cf3bbce83604418e">NextTickProgramReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memitem:ad03abf3c8beaad947016bea6a5e66d85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ad03abf3c8beaad947016bea6a5e66d85">setNextTickProgramReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4d3c1b6e8a7f34189f976958e72773c0">NextTickProgramReqCb</a> &amp;&amp;func)</td></tr>
 <tr class="memdesc:ad03abf3c8beaad947016bea6a5e66d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new time measurement is required.  <a href="classcc__mqttsn__gateway_1_1Session.html#ad03abf3c8beaad947016bea6a5e66d85">More...</a><br /></td></tr>
 <tr class="separator:ad03abf3c8beaad947016bea6a5e66d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5219a534cc2f71375f1bba76e3819695"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a5219a534cc2f71375f1bba76e3819695">setCancelTickWaitReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a621a439ba46b7e1b3fcb110e7461c026">CancelTickWaitReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memitem:a5219a534cc2f71375f1bba76e3819695"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a5219a534cc2f71375f1bba76e3819695">setCancelTickWaitReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4b4ce5a131367e564c4cb629585e92b3">CancelTickWaitReqCb</a> &amp;&amp;func)</td></tr>
 <tr class="memdesc:a5219a534cc2f71375f1bba76e3819695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when previously requested time measurement needs to be cancelled.  <a href="classcc__mqttsn__gateway_1_1Session.html#a5219a534cc2f71375f1bba76e3819695">More...</a><br /></td></tr>
 <tr class="separator:a5219a534cc2f71375f1bba76e3819695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae1e01456a2e22361627d02371f685f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a0ae1e01456a2e22361627d02371f685f">setSendDataClientReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a96348a485d2001bda6b1903375053505">SendDataReqCb</a> &amp;&amp;func)</td></tr>
-<tr class="memdesc:a0ae1e01456a2e22361627d02371f685f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new data needs to be sent to the client.  <a href="classcc__mqttsn__gateway_1_1Session.html#a0ae1e01456a2e22361627d02371f685f">More...</a><br /></td></tr>
-<tr class="separator:a0ae1e01456a2e22361627d02371f685f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56eaafc3518f45db61b4482cb7626464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a56eaafc3518f45db61b4482cb7626464">setSendDataBrokerReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a96348a485d2001bda6b1903375053505">SendDataReqCb</a> &amp;&amp;func)</td></tr>
-<tr class="memdesc:a56eaafc3518f45db61b4482cb7626464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new data needs to be sent to the broker.  <a href="classcc__mqttsn__gateway_1_1Session.html#a56eaafc3518f45db61b4482cb7626464">More...</a><br /></td></tr>
-<tr class="separator:a56eaafc3518f45db61b4482cb7626464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7325fc0c10dc1cae59a6ff9a2252e7ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a7325fc0c10dc1cae59a6ff9a2252e7ee">setTerminationReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aca29420d1dac3ae6dd4c94f0a5b707a8">TerminationReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memitem:abb4228612f45bc52de3d62be40f28c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#abb4228612f45bc52de3d62be40f28c29">setSendDataClientReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a91cde78d651a8139fbe8a6cc03809023">ClientSendDataReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memdesc:abb4228612f45bc52de3d62be40f28c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new data needs to be sent to the client.  <a href="classcc__mqttsn__gateway_1_1Session.html#abb4228612f45bc52de3d62be40f28c29">More...</a><br /></td></tr>
+<tr class="separator:abb4228612f45bc52de3d62be40f28c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230c8f69e352f9314286990f5d0979f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a230c8f69e352f9314286990f5d0979f4">setSendDataBrokerReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ade8a6df2b5852e200b70ca031e0446aa">BrokerSendDataReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memdesc:a230c8f69e352f9314286990f5d0979f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new data needs to be sent to the broker.  <a href="classcc__mqttsn__gateway_1_1Session.html#a230c8f69e352f9314286990f5d0979f4">More...</a><br /></td></tr>
+<tr class="separator:a230c8f69e352f9314286990f5d0979f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7325fc0c10dc1cae59a6ff9a2252e7ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a7325fc0c10dc1cae59a6ff9a2252e7ee">setTerminationReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a61bf51eecaa90806ce08c821be078b0a">TerminationReqCb</a> &amp;&amp;func)</td></tr>
 <tr class="memdesc:a7325fc0c10dc1cae59a6ff9a2252e7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when the session needs to be terminated and this <a class="el" href="classcc__mqttsn__gateway_1_1Session.html">Session</a> object deleted.  <a href="classcc__mqttsn__gateway_1_1Session.html#a7325fc0c10dc1cae59a6ff9a2252e7ee">More...</a><br /></td></tr>
 <tr class="separator:a7325fc0c10dc1cae59a6ff9a2252e7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2db095effa29cff1497342e4e0d638ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a2db095effa29cff1497342e4e0d638ac">setBrokerReconnectReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ace57f8e8eaced5ec466642541f859abe">BrokerReconnectReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memitem:a2db095effa29cff1497342e4e0d638ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a2db095effa29cff1497342e4e0d638ac">setBrokerReconnectReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a13c1eae248902824f4871d1680e7c6e4">BrokerReconnectReqCb</a> &amp;&amp;func)</td></tr>
 <tr class="memdesc:a2db095effa29cff1497342e4e0d638ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when the session needs to close existing TCP/IP connection to the broker and open a new one.  <a href="classcc__mqttsn__gateway_1_1Session.html#a2db095effa29cff1497342e4e0d638ac">More...</a><br /></td></tr>
 <tr class="separator:a2db095effa29cff1497342e4e0d638ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa78b22f6b7144f598639160703376292"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aa78b22f6b7144f598639160703376292">setClientConnectedReportCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a536d63dff93e9136c8c3c0315ff3dfa0">ClientConnectedReportCb</a> &amp;&amp;func)</td></tr>
+<tr class="memitem:aa78b22f6b7144f598639160703376292"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aa78b22f6b7144f598639160703376292">setClientConnectedReportCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#afae491947b50b43e3b136a727d9374f2">ClientConnectedReportCb</a> &amp;&amp;func)</td></tr>
 <tr class="memdesc:aa78b22f6b7144f598639160703376292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when MQTT-SN client is successfully connected to the broker.  <a href="classcc__mqttsn__gateway_1_1Session.html#aa78b22f6b7144f598639160703376292">More...</a><br /></td></tr>
 <tr class="separator:aa78b22f6b7144f598639160703376292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab519faa29c6d2386e2b305fdb2289bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ab519faa29c6d2386e2b305fdb2289bbf">setAuthInfoReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ab00bbf38ff8dfc6e908cb133301abb33">AuthInfoReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memitem:ab519faa29c6d2386e2b305fdb2289bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ab519faa29c6d2386e2b305fdb2289bbf">setAuthInfoReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#af1ef7fa091dd09f74b5504f4f21fa6ef">AuthInfoReqCb</a> &amp;&amp;func)</td></tr>
 <tr class="memdesc:ab519faa29c6d2386e2b305fdb2289bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be used to request authentication information for specific client.  <a href="classcc__mqttsn__gateway_1_1Session.html#ab519faa29c6d2386e2b305fdb2289bbf">More...</a><br /></td></tr>
 <tr class="separator:ab519faa29c6d2386e2b305fdb2289bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ad6bad2e911a882b42fda99a827c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a63ad6bad2e911a882b42fda99a827c70">setErrorReportCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4a6e644c040bb2f3bd16fab845f61fc2">ErrorReportCb</a> &amp;&amp;func)</td></tr>
+<tr class="memdesc:a63ad6bad2e911a882b42fda99a827c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be used to report detected errors.  <a href="classcc__mqttsn__gateway_1_1Session.html#a63ad6bad2e911a882b42fda99a827c70">More...</a><br /></td></tr>
+<tr class="separator:a63ad6bad2e911a882b42fda99a827c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca05f624d53ec51fb6b2db201b2dfd19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aca05f624d53ec51fb6b2db201b2dfd19">setFwdEncSessionCreatedReportCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a7f3eeb173021e2bebd5edbbcb4e58c7d">FwdEncSessionCreatedReportCb</a> &amp;&amp;func)</td></tr>
+<tr class="memdesc:aca05f624d53ec51fb6b2db201b2dfd19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when the forwarding encapsulation session is detected and to notify application about such session creation.  <a href="classcc__mqttsn__gateway_1_1Session.html#aca05f624d53ec51fb6b2db201b2dfd19">More...</a><br /></td></tr>
+<tr class="separator:aca05f624d53ec51fb6b2db201b2dfd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748fdd26e5639d274e4f28d2f3c2fe56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a748fdd26e5639d274e4f28d2f3c2fe56">setFwdEncSessionDeletedReportCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ad75b3f3fbb8d555302375a2ae25b82e2">FwdEncSessionDeletedReportCb</a> &amp;&amp;func)</td></tr>
+<tr class="memdesc:a748fdd26e5639d274e4f28d2f3c2fe56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when the forwarding encapsulation session is about to be deleted.  <a href="classcc__mqttsn__gateway_1_1Session.html#a748fdd26e5639d274e4f28d2f3c2fe56">More...</a><br /></td></tr>
+<tr class="separator:a748fdd26e5639d274e4f28d2f3c2fe56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6120e5c84cfa3e7a577c28ce5351cd2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a6120e5c84cfa3e7a577c28ce5351cd2f">setGatewayId</a> (std::uint8_t value)</td></tr>
 <tr class="memdesc:a6120e5c84cfa3e7a577c28ce5351cd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set gateway numeric ID to be reported when requested.  <a href="classcc__mqttsn__gateway_1_1Session.html#a6120e5c84cfa3e7a577c28ce5351cd2f">More...</a><br /></td></tr>
 <tr class="separator:a6120e5c84cfa3e7a577c28ce5351cd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851aeead4cbdc80dedcc7d90ff13b517"><td class="memItemLeft" align="right" valign="top"><a id="a851aeead4cbdc80dedcc7d90ff13b517"></a>
+std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a851aeead4cbdc80dedcc7d90ff13b517">getGatewayId</a> () const</td></tr>
+<tr class="memdesc:a851aeead4cbdc80dedcc7d90ff13b517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get configured gateway numeric ID to be reported when requested. <br /></td></tr>
+<tr class="separator:a851aeead4cbdc80dedcc7d90ff13b517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4159f98133b10a30982ee6c54e7c9be6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4159f98133b10a30982ee6c54e7c9be6">setRetryPeriod</a> (unsigned value)</td></tr>
 <tr class="memdesc:a4159f98133b10a30982ee6c54e7c9be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set retry period to wait between resending unacknowledged message to the client and/or broker.  <a href="classcc__mqttsn__gateway_1_1Session.html#a4159f98133b10a30982ee6c54e7c9be6">More...</a><br /></td></tr>
 <tr class="separator:a4159f98133b10a30982ee6c54e7c9be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f45dbe488afe79d8e06f430440a578"><td class="memItemLeft" align="right" valign="top"><a id="a33f45dbe488afe79d8e06f430440a578"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a33f45dbe488afe79d8e06f430440a578">getRetryPeriod</a> () const</td></tr>
+<tr class="memdesc:a33f45dbe488afe79d8e06f430440a578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current configuration of the retry period. <br /></td></tr>
+<tr class="separator:a33f45dbe488afe79d8e06f430440a578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65eea77d5c98b46c5ac12053976b0771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a65eea77d5c98b46c5ac12053976b0771">setRetryCount</a> (unsigned value)</td></tr>
 <tr class="memdesc:a65eea77d5c98b46c5ac12053976b0771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of retry attempts to perform before abandoning attempt to send unacknowledged message.  <a href="classcc__mqttsn__gateway_1_1Session.html#a65eea77d5c98b46c5ac12053976b0771">More...</a><br /></td></tr>
 <tr class="separator:a65eea77d5c98b46c5ac12053976b0771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed998167b253db7a980f88d124f3fbc7"><td class="memItemLeft" align="right" valign="top"><a id="aed998167b253db7a980f88d124f3fbc7"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aed998167b253db7a980f88d124f3fbc7">getRetryCount</a> () const</td></tr>
+<tr class="memdesc:aed998167b253db7a980f88d124f3fbc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current configuration of the retry count. <br /></td></tr>
+<tr class="separator:aed998167b253db7a980f88d124f3fbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b96e11b66b6ece04f8a331c9b72600c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a0b96e11b66b6ece04f8a331c9b72600c">setSleepingClientMsgLimit</a> (std::size_t value)</td></tr>
 <tr class="memdesc:a0b96e11b66b6ece04f8a331c9b72600c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide limit to number pending messages being accumulated for the sleeping client.  <a href="classcc__mqttsn__gateway_1_1Session.html#a0b96e11b66b6ece04f8a331c9b72600c">More...</a><br /></td></tr>
 <tr class="separator:a0b96e11b66b6ece04f8a331c9b72600c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0160ae049acb4d1d60feed15bc09b921"><td class="memItemLeft" align="right" valign="top"><a id="a0160ae049acb4d1d60feed15bc09b921"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a0160ae049acb4d1d60feed15bc09b921">getSleepingClientMsgLimit</a> () const</td></tr>
+<tr class="memdesc:a0160ae049acb4d1d60feed15bc09b921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get currenly configured limit to pending messages being accumulated for the sleeping client. <br /></td></tr>
+<tr class="separator:a0160ae049acb4d1d60feed15bc09b921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a9ce1bc29973c0659044f752ff3d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a31a9ce1bc29973c0659044f752ff3d14">setDefaultClientId</a> (const std::string &amp;value)</td></tr>
 <tr class="memdesc:a31a9ce1bc29973c0659044f752ff3d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide default client ID for clients that report empty one in their attempt to connect.  <a href="classcc__mqttsn__gateway_1_1Session.html#a31a9ce1bc29973c0659044f752ff3d14">More...</a><br /></td></tr>
 <tr class="separator:a31a9ce1bc29973c0659044f752ff3d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3050a27617459c080fdf27c8b2ba9a2f"><td class="memItemLeft" align="right" valign="top"><a id="a3050a27617459c080fdf27c8b2ba9a2f"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a3050a27617459c080fdf27c8b2ba9a2f">getDefaultClientId</a> () const</td></tr>
+<tr class="memdesc:a3050a27617459c080fdf27c8b2ba9a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current default client id configuration. <br /></td></tr>
+<tr class="separator:a3050a27617459c080fdf27c8b2ba9a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9933a5769200858d7faa2bf1f374d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ad9933a5769200858d7faa2bf1f374d82">setPubOnlyKeepAlive</a> (std::uint16_t value)</td></tr>
 <tr class="memdesc:ad9933a5769200858d7faa2bf1f374d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide default "keep alive" period for "publish only" clients, that do not make an attempt to connect to the gateway.  <a href="classcc__mqttsn__gateway_1_1Session.html#ad9933a5769200858d7faa2bf1f374d82">More...</a><br /></td></tr>
 <tr class="separator:ad9933a5769200858d7faa2bf1f374d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4c3c29fb9238733200686d039552da"><td class="memItemLeft" align="right" valign="top"><a id="a4f4c3c29fb9238733200686d039552da"></a>
+std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4f4c3c29fb9238733200686d039552da">getPubOnlyKeepAlive</a> () const</td></tr>
+<tr class="memdesc:a4f4c3c29fb9238733200686d039552da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current configuration of the default "keep alive" period for "publish only" clients. <br /></td></tr>
+<tr class="separator:a4f4c3c29fb9238733200686d039552da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12513af6a5f2db6ebc57947771379bca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a12513af6a5f2db6ebc57947771379bca">start</a> ()</td></tr>
 <tr class="memdesc:a12513af6a5f2db6ebc57947771379bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start this object's operation.  <a href="classcc__mqttsn__gateway_1_1Session.html#a12513af6a5f2db6ebc57947771379bca">More...</a><br /></td></tr>
 <tr class="separator:a12513af6a5f2db6ebc57947771379bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +228,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab3ce2cc8b3a964625a6b59c70ceb8a9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ab3ce2cc8b3a964625a6b59c70ceb8a9c">setBrokerConnected</a> (bool connected)</td></tr>
 <tr class="memdesc:ab3ce2cc8b3a964625a6b59c70ceb8a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the <a class="el" href="classcc__mqttsn__gateway_1_1Session.html">Session</a> object about broker being connected / disconnected.  <a href="classcc__mqttsn__gateway_1_1Session.html#ab3ce2cc8b3a964625a6b59c70ceb8a9c">More...</a><br /></td></tr>
 <tr class="separator:ab3ce2cc8b3a964625a6b59c70ceb8a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c37fd734a015d27bdb2360d7e311fe8"><td class="memItemLeft" align="right" valign="top"><a id="a1c37fd734a015d27bdb2360d7e311fe8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a1c37fd734a015d27bdb2360d7e311fe8">getBrokerConnected</a> () const</td></tr>
+<tr class="memdesc:a1c37fd734a015d27bdb2360d7e311fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get currently recorded broker connection status. <br /></td></tr>
+<tr class="separator:a1c37fd734a015d27bdb2360d7e311fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a507b38d797b9e4d302ce4e9eb8acdee5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a507b38d797b9e4d302ce4e9eb8acdee5">addPredefinedTopic</a> (const std::string &amp;topic, std::uint16_t topicId)</td></tr>
 <tr class="memdesc:a507b38d797b9e4d302ce4e9eb8acdee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add predefined topic string and ID information.  <a href="classcc__mqttsn__gateway_1_1Session.html#a507b38d797b9e4d302ce4e9eb8acdee5">More...</a><br /></td></tr>
 <tr class="separator:a507b38d797b9e4d302ce4e9eb8acdee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,14 +240,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:adfe4fadd74fdf75b997f10604093d91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa54812b289e8d1a3e75cd4bb35585588"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa54812b289e8d1a3e75cd4bb35585588">&#9670;&nbsp;</a></span>AuthInfo</h2>
+<a id="a18ce4af1ec9bd9368cdbe082537cac6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ce4af1ec9bd9368cdbe082537cac6e">&#9670;&nbsp;</a></span>AuthInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;std::string, <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a39ed7f3049c3e84bf342d138d5d3d354">BinaryData</a>&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aa54812b289e8d1a3e75cd4bb35585588">cc_mqttsn_gateway::Session::AuthInfo</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a18ce4af1ec9bd9368cdbe082537cac6e">cc_mqttsn_gateway::Session::AuthInfo</a> =  std::pair&lt;std::string, <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a8708e95121d9ddbfec36c7173a4fb1dd">BinaryData</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -208,14 +257,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ab00bbf38ff8dfc6e908cb133301abb33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab00bbf38ff8dfc6e908cb133301abb33">&#9670;&nbsp;</a></span>AuthInfoReqCb</h2>
+<a id="af1ef7fa091dd09f74b5504f4f21fa6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ef7fa091dd09f74b5504f4f21fa6ef">&#9670;&nbsp;</a></span>AuthInfoReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aa54812b289e8d1a3e75cd4bb35585588">AuthInfo</a> (const std::string&amp; clientId)&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ab00bbf38ff8dfc6e908cb133301abb33">cc_mqttsn_gateway::Session::AuthInfoReqCb</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#af1ef7fa091dd09f74b5504f4f21fa6ef">cc_mqttsn_gateway::Session::AuthInfoReqCb</a> =  std::function&lt;<a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a18ce4af1ec9bd9368cdbe082537cac6e">AuthInfo</a> (const std::string&amp; clientId)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,14 +280,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ace57f8e8eaced5ec466642541f859abe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace57f8e8eaced5ec466642541f859abe">&#9670;&nbsp;</a></span>BrokerReconnectReqCb</h2>
+<a id="a13c1eae248902824f4871d1680e7c6e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c1eae248902824f4871d1680e7c6e4">&#9670;&nbsp;</a></span>BrokerReconnectReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void ()&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ace57f8e8eaced5ec466642541f859abe">cc_mqttsn_gateway::Session::BrokerReconnectReqCb</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a13c1eae248902824f4871d1680e7c6e4">cc_mqttsn_gateway::Session::BrokerReconnectReqCb</a> =  std::function&lt;void ()&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -248,14 +297,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a621a439ba46b7e1b3fcb110e7461c026"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a621a439ba46b7e1b3fcb110e7461c026">&#9670;&nbsp;</a></span>CancelTickWaitReqCb</h2>
+<a id="ade8a6df2b5852e200b70ca031e0446aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8a6df2b5852e200b70ca031e0446aa">&#9670;&nbsp;</a></span>BrokerSendDataReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;unsigned ()&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a621a439ba46b7e1b3fcb110e7461c026">cc_mqttsn_gateway::Session::CancelTickWaitReqCb</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ade8a6df2b5852e200b70ca031e0446aa">cc_mqttsn_gateway::Session::BrokerSendDataReqCb</a> =  std::function&lt;void (const std::uint8_t* buf, std::size_t bufSize)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback, used to request delivery of serialised message to the broker. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer containing serialised message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bufSize</td><td>Number of bytes in the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b4ce5a131367e564c4cb629585e92b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4ce5a131367e564c4cb629585e92b3">&#9670;&nbsp;</a></span>CancelTickWaitReqCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4b4ce5a131367e564c4cb629585e92b3">cc_mqttsn_gateway::Session::CancelTickWaitReqCb</a> =  std::function&lt;unsigned ()&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -265,14 +337,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a536d63dff93e9136c8c3c0315ff3dfa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a536d63dff93e9136c8c3c0315ff3dfa0">&#9670;&nbsp;</a></span>ClientConnectedReportCb</h2>
+<a id="afae491947b50b43e3b136a727d9374f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae491947b50b43e3b136a727d9374f2">&#9670;&nbsp;</a></span>ClientConnectedReportCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void (const std::string&amp; clientId)&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a536d63dff93e9136c8c3c0315ff3dfa0">cc_mqttsn_gateway::Session::ClientConnectedReportCb</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#afae491947b50b43e3b136a727d9374f2">cc_mqttsn_gateway::Session::ClientConnectedReportCb</a> =  std::function&lt;void (const std::string&amp; clientId)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,14 +359,105 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a768acb036f31b536cf3bbce83604418e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a768acb036f31b536cf3bbce83604418e">&#9670;&nbsp;</a></span>NextTickProgramReqCb</h2>
+<a id="a91cde78d651a8139fbe8a6cc03809023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cde78d651a8139fbe8a6cc03809023">&#9670;&nbsp;</a></span>ClientSendDataReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void (unsigned value)&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a768acb036f31b536cf3bbce83604418e">cc_mqttsn_gateway::Session::NextTickProgramReqCb</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a91cde78d651a8139fbe8a6cc03809023">cc_mqttsn_gateway::Session::ClientSendDataReqCb</a> =  std::function&lt;void (const std::uint8_t* buf, std::size_t bufSize, unsigned broadcastRadius)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback, used to request delivery of serialised message to the client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer containing serialised message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bufSize</td><td>Number of bytes in the buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">broadcastRadius</td><td>Broadcast radius. 0 means unitcast </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a6e644c040bb2f3bd16fab845f61fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6e644c040bb2f3bd16fab845f61fc2">&#9670;&nbsp;</a></span>ErrorReportCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4a6e644c040bb2f3bd16fab845f61fc2">cc_mqttsn_gateway::Session::ErrorReportCb</a> =  std::function&lt;void (const char* msg)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of the callback used to report detected errors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>Error message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f3eeb173021e2bebd5edbbcb4e58c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3eeb173021e2bebd5edbbcb4e58c7d">&#9670;&nbsp;</a></span>FwdEncSessionCreatedReportCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a7f3eeb173021e2bebd5edbbcb4e58c7d">cc_mqttsn_gateway::Session::FwdEncSessionCreatedReportCb</a> =  std::function&lt;bool (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html">Session</a>* session)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback used to notify the application about forwarding encapsulation session being created. </p>
+<p>The application is responsible to perform the necessary session configuration as well as set all the callbacks except the one set by the <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#abb4228612f45bc52de3d62be40f28c29">setSendDataClientReqCb()</a> and <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a7325fc0c10dc1cae59a6ff9a2252e7ee">setTerminationReqCb()</a>. The data sent to the client as well as the session termination are managed by the calling session object. The application is responsible to manage the timer as well as broker connection of the reported session. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Pointer to the created session object. Owned by the session object invoking the callback, mustn't be deleted by the application. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b>true</b> in case of success, <b>false</b> in case of falure. </dd></dl>
+
+</div>
+</div>
+<a id="ad75b3f3fbb8d555302375a2ae25b82e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75b3f3fbb8d555302375a2ae25b82e2">&#9670;&nbsp;</a></span>FwdEncSessionDeletedReportCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ad75b3f3fbb8d555302375a2ae25b82e2">cc_mqttsn_gateway::Session::FwdEncSessionDeletedReportCb</a> =  std::function&lt;void (<a class="el" href="classcc__mqttsn__gateway_1_1Session.html">Session</a>* session)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback used to notify the application about forwarding encapsulation session being deleted. </p>
+<p>The application is responsible to remove any reference to the session object from its internal data structes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Pointer to the created session object. Owned by the session object invoking the callback, mustn't be deleted by the application. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d3c1b6e8a7f34189f976958e72773c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3c1b6e8a7f34189f976958e72773c0">&#9670;&nbsp;</a></span>NextTickProgramReqCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4d3c1b6e8a7f34189f976958e72773c0">cc_mqttsn_gateway::Session::NextTickProgramReqCb</a> =  std::function&lt;void (unsigned value)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -309,37 +472,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a96348a485d2001bda6b1903375053505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96348a485d2001bda6b1903375053505">&#9670;&nbsp;</a></span>SendDataReqCb</h2>
+<a id="a61bf51eecaa90806ce08c821be078b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61bf51eecaa90806ce08c821be078b0a">&#9670;&nbsp;</a></span>TerminationReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void (const std::uint8_t* buf, std::size_t bufSize)&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a96348a485d2001bda6b1903375053505">cc_mqttsn_gateway::Session::SendDataReqCb</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type of callback, used to request delivery of serialised message to the client or broker. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer containing serialised message. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bufSize</td><td>Number of bytes in the buffer </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aca29420d1dac3ae6dd4c94f0a5b707a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca29420d1dac3ae6dd4c94f0a5b707a8">&#9670;&nbsp;</a></span>TerminationReqCb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::function&lt;void ()&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aca29420d1dac3ae6dd4c94f0a5b707a8">cc_mqttsn_gateway::Session::TerminationReqCb</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a61bf51eecaa90806ce08c821be078b0a">cc_mqttsn_gateway::Session::TerminationReqCb</a> =  std::function&lt;void ()&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -495,7 +635,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Session::setAuthInfoReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ab00bbf38ff8dfc6e908cb133301abb33">AuthInfoReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#af1ef7fa091dd09f74b5504f4f21fa6ef">AuthInfoReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -547,7 +687,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Session::setBrokerReconnectReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ace57f8e8eaced5ec466642541f859abe">BrokerReconnectReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a13c1eae248902824f4871d1680e7c6e4">BrokerReconnectReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -573,7 +713,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Session::setCancelTickWaitReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a621a439ba46b7e1b3fcb110e7461c026">CancelTickWaitReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4b4ce5a131367e564c4cb629585e92b3">CancelTickWaitReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -599,7 +739,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Session::setClientConnectedReportCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a536d63dff93e9136c8c3c0315ff3dfa0">ClientConnectedReportCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#afae491947b50b43e3b136a727d9374f2">ClientConnectedReportCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -642,6 +782,84 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a63ad6bad2e911a882b42fda99a827c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ad6bad2e911a882b42fda99a827c70">&#9670;&nbsp;</a></span>setErrorReportCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_mqttsn_gateway::Session::setErrorReportCb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4a6e644c040bb2f3bd16fab845f61fc2">ErrorReportCb</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the callback to be used to report detected errors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>R-value reference to the callback object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca05f624d53ec51fb6b2db201b2dfd19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca05f624d53ec51fb6b2db201b2dfd19">&#9670;&nbsp;</a></span>setFwdEncSessionCreatedReportCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_mqttsn_gateway::Session::setFwdEncSessionCreatedReportCb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a7f3eeb173021e2bebd5edbbcb4e58c7d">FwdEncSessionCreatedReportCb</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the callback to be invoked when the forwarding encapsulation session is detected and to notify application about such session creation. </p>
+<p>When not set, the forwarding enapsulation messages will be ignored </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>R-value reference to the callback object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a748fdd26e5639d274e4f28d2f3c2fe56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748fdd26e5639d274e4f28d2f3c2fe56">&#9670;&nbsp;</a></span>setFwdEncSessionDeletedReportCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_mqttsn_gateway::Session::setFwdEncSessionDeletedReportCb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ad75b3f3fbb8d555302375a2ae25b82e2">FwdEncSessionDeletedReportCb</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the callback to be invoked when the forwarding encapsulation session is about to be deleted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>R-value reference to the callback object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6120e5c84cfa3e7a577c28ce5351cd2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6120e5c84cfa3e7a577c28ce5351cd2f">&#9670;&nbsp;</a></span>setGatewayId()</h2>
 
@@ -677,7 +895,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Session::setNextTickProgramReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a768acb036f31b536cf3bbce83604418e">NextTickProgramReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4d3c1b6e8a7f34189f976958e72773c0">NextTickProgramReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -772,8 +990,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a56eaafc3518f45db61b4482cb7626464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56eaafc3518f45db61b4482cb7626464">&#9670;&nbsp;</a></span>setSendDataBrokerReqCb()</h2>
+<a id="a230c8f69e352f9314286990f5d0979f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230c8f69e352f9314286990f5d0979f4">&#9670;&nbsp;</a></span>setSendDataBrokerReqCb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -781,7 +999,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Session::setSendDataBrokerReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a96348a485d2001bda6b1903375053505">SendDataReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ade8a6df2b5852e200b70ca031e0446aa">BrokerSendDataReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -798,8 +1016,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a0ae1e01456a2e22361627d02371f685f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ae1e01456a2e22361627d02371f685f">&#9670;&nbsp;</a></span>setSendDataClientReqCb()</h2>
+<a id="abb4228612f45bc52de3d62be40f28c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4228612f45bc52de3d62be40f28c29">&#9670;&nbsp;</a></span>setSendDataClientReqCb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -807,7 +1025,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Session::setSendDataClientReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a96348a485d2001bda6b1903375053505">SendDataReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a91cde78d651a8139fbe8a6cc03809023">ClientSendDataReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -859,7 +1077,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Session::setTerminationReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aca29420d1dac3ae6dd4c94f0a5b707a8">TerminationReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a61bf51eecaa90806ce08c821be078b0a">TerminationReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -960,7 +1178,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 14:02:11 for MQTT-SN Gateway Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -78,6 +78,9 @@ $(function() {
 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
+<li>brokerConnectionType()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#aef758bcbc3d506f96773915eedecab29">cc_mqttsn_gateway::Config</a>
+</li>
 <li>brokerTcpHostAddress()
 : <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a710a6985da49a7922f775a8df875d9d3">cc_mqttsn_gateway::Config</a>
 </li>
@@ -88,6 +91,9 @@ $(function() {
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>clientConnectionType()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#a11c51098a26f511d7f32e92d1626dafb">cc_mqttsn_gateway::Config</a>
+</li>
 <li>Config()
 : <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ae32121303996a49841236665ed53f60f">cc_mqttsn_gateway::Config</a>
 </li>
@@ -117,12 +123,44 @@ $(function() {
 <li>gatewayId()
 : <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ac896ea4bfc3c3fab600d299160dba990">cc_mqttsn_gateway::Config</a>
 </li>
+<li>getAdvertisePeriod()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#af5b510419a496c8a150e3747f94edc79">cc_mqttsn_gateway::Gateway</a>
+</li>
+<li>getBrokerConnected()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a1c37fd734a015d27bdb2360d7e311fe8">cc_mqttsn_gateway::Session</a>
+</li>
+<li>getDefaultClientId()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a3050a27617459c080fdf27c8b2ba9a2f">cc_mqttsn_gateway::Session</a>
+</li>
+<li>getGatewayId()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#ade220efe4c94dda44a5e3db214825382">cc_mqttsn_gateway::Gateway</a>
+, <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a851aeead4cbdc80dedcc7d90ff13b517">cc_mqttsn_gateway::Session</a>
+</li>
+<li>getPubOnlyKeepAlive()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4f4c3c29fb9238733200686d039552da">cc_mqttsn_gateway::Session</a>
+</li>
+<li>getRetryCount()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aed998167b253db7a980f88d124f3fbc7">cc_mqttsn_gateway::Session</a>
+</li>
+<li>getRetryPeriod()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a33f45dbe488afe79d8e06f430440a578">cc_mqttsn_gateway::Session</a>
+</li>
+<li>getSleepingClientMsgLimit()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a0160ae049acb4d1d60feed15bc09b921">cc_mqttsn_gateway::Session</a>
+</li>
 </ul>
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>isRunning()
 : <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#ac4074b355f723b9cf16c7df90dca2b6e">cc_mqttsn_gateway::Session</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>logFile()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Config.html#ade0a3b3025cd7e78b747622fc2006d7a">cc_mqttsn_gateway::Config</a>
 </li>
 </ul>
 
@@ -175,6 +213,15 @@ $(function() {
 <li>setDefaultClientId()
 : <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a31a9ce1bc29973c0659044f752ff3d14">cc_mqttsn_gateway::Session</a>
 </li>
+<li>setErrorReportCb()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a63ad6bad2e911a882b42fda99a827c70">cc_mqttsn_gateway::Session</a>
+</li>
+<li>setFwdEncSessionCreatedReportCb()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#aca05f624d53ec51fb6b2db201b2dfd19">cc_mqttsn_gateway::Session</a>
+</li>
+<li>setFwdEncSessionDeletedReportCb()
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a748fdd26e5639d274e4f28d2f3c2fe56">cc_mqttsn_gateway::Session</a>
+</li>
 <li>setGatewayId()
 : <a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#ae3340303dabcfd03dbb98b6a9dd68f04">cc_mqttsn_gateway::Gateway</a>
 , <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a6120e5c84cfa3e7a577c28ce5351cd2f">cc_mqttsn_gateway::Session</a>
@@ -193,10 +240,10 @@ $(function() {
 : <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a4159f98133b10a30982ee6c54e7c9be6">cc_mqttsn_gateway::Session</a>
 </li>
 <li>setSendDataBrokerReqCb()
-: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a56eaafc3518f45db61b4482cb7626464">cc_mqttsn_gateway::Session</a>
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a230c8f69e352f9314286990f5d0979f4">cc_mqttsn_gateway::Session</a>
 </li>
 <li>setSendDataClientReqCb()
-: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#a0ae1e01456a2e22361627d02371f685f">cc_mqttsn_gateway::Session</a>
+: <a class="el" href="classcc__mqttsn__gateway_1_1Session.html#abb4228612f45bc52de3d62be40f28c29">cc_mqttsn_gateway::Session</a>
 </li>
 <li>setSendDataReqCb()
 : <a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#abce790ddf300647f8ff52bfc84385727">cc_mqttsn_gateway::Gateway</a>
@@ -249,7 +296,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 14:02:11 for MQTT-SN Gateway Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

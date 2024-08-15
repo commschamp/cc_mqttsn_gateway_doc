@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cc_mqttsn_gateway</b></li><li class="navelem"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html">Gateway</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecc__mqttsn__gateway.html">cc_mqttsn_gateway</a></li><li class="navelem"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html">Gateway</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,12 +80,12 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0a2a84f31630c29877224efe42955072"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(unsigned ms)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a0a2a84f31630c29877224efe42955072">NextTickProgramReqCb</a></td></tr>
-<tr class="memdesc:a0a2a84f31630c29877224efe42955072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the callback used to request time measurement.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#a0a2a84f31630c29877224efe42955072">More...</a><br /></td></tr>
-<tr class="separator:a0a2a84f31630c29877224efe42955072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74f1a2f9caba1f8c8ba41bcf4f5ae58a"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const std::uint8_t *buf, std::size_t bufSize)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a74f1a2f9caba1f8c8ba41bcf4f5ae58a">SendDataReqCb</a></td></tr>
-<tr class="memdesc:a74f1a2f9caba1f8c8ba41bcf4f5ae58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request send the serialised <b>ADVERTISE</b> message.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#a74f1a2f9caba1f8c8ba41bcf4f5ae58a">More...</a><br /></td></tr>
-<tr class="separator:a74f1a2f9caba1f8c8ba41bcf4f5ae58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6c83ec82aa22f872b29f4d79d5713f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a8a6c83ec82aa22f872b29f4d79d5713f">NextTickProgramReqCb</a> = std::function&lt; void(unsigned ms)&gt;</td></tr>
+<tr class="memdesc:a8a6c83ec82aa22f872b29f4d79d5713f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the callback used to request time measurement.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#a8a6c83ec82aa22f872b29f4d79d5713f">More...</a><br /></td></tr>
+<tr class="separator:a8a6c83ec82aa22f872b29f4d79d5713f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574d84b0a91a0f9b4cc7b814c6d1de14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a574d84b0a91a0f9b4cc7b814c6d1de14">SendDataReqCb</a> = std::function&lt; void(const std::uint8_t *buf, std::size_t bufSize)&gt;</td></tr>
+<tr class="memdesc:a574d84b0a91a0f9b4cc7b814c6d1de14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request send the serialised <b>ADVERTISE</b> message.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#a574d84b0a91a0f9b4cc7b814c6d1de14">More...</a><br /></td></tr>
+<tr class="separator:a574d84b0a91a0f9b4cc7b814c6d1de14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -97,18 +97,26 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#abb426c1dcbd1eb7d59a45b3bf8cf315e">~Gateway</a> ()</td></tr>
 <tr class="memdesc:abb426c1dcbd1eb7d59a45b3bf8cf315e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:abb426c1dcbd1eb7d59a45b3bf8cf315e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00e7d543ec8b9f1c7e356e7ec56f3ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a00e7d543ec8b9f1c7e356e7ec56f3ea8">setNextTickProgramReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a0a2a84f31630c29877224efe42955072">NextTickProgramReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memitem:a00e7d543ec8b9f1c7e356e7ec56f3ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a00e7d543ec8b9f1c7e356e7ec56f3ea8">setNextTickProgramReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a8a6c83ec82aa22f872b29f4d79d5713f">NextTickProgramReqCb</a> &amp;&amp;func)</td></tr>
 <tr class="memdesc:a00e7d543ec8b9f1c7e356e7ec56f3ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new time measurement is required.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#a00e7d543ec8b9f1c7e356e7ec56f3ea8">More...</a><br /></td></tr>
 <tr class="separator:a00e7d543ec8b9f1c7e356e7ec56f3ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abce790ddf300647f8ff52bfc84385727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#abce790ddf300647f8ff52bfc84385727">setSendDataReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a74f1a2f9caba1f8c8ba41bcf4f5ae58a">SendDataReqCb</a> &amp;&amp;func)</td></tr>
+<tr class="memitem:abce790ddf300647f8ff52bfc84385727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#abce790ddf300647f8ff52bfc84385727">setSendDataReqCb</a> (<a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a574d84b0a91a0f9b4cc7b814c6d1de14">SendDataReqCb</a> &amp;&amp;func)</td></tr>
 <tr class="memdesc:abce790ddf300647f8ff52bfc84385727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new <b>ADVERTISE</b> message needs to be broadcasted.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#abce790ddf300647f8ff52bfc84385727">More...</a><br /></td></tr>
 <tr class="separator:abce790ddf300647f8ff52bfc84385727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb1827fad98031ab79d73bbc8ff08117"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#adb1827fad98031ab79d73bbc8ff08117">setAdvertisePeriod</a> (std::uint16_t value)</td></tr>
 <tr class="memdesc:adb1827fad98031ab79d73bbc8ff08117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set period after which <b>ADVERTISE</b> message needs to be constatly sent.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#adb1827fad98031ab79d73bbc8ff08117">More...</a><br /></td></tr>
 <tr class="separator:adb1827fad98031ab79d73bbc8ff08117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b510419a496c8a150e3747f94edc79"><td class="memItemLeft" align="right" valign="top"><a id="af5b510419a496c8a150e3747f94edc79"></a>
+std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#af5b510419a496c8a150e3747f94edc79">getAdvertisePeriod</a> () const</td></tr>
+<tr class="memdesc:af5b510419a496c8a150e3747f94edc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current configuration of the <b>ADVERTISE</b> message period. <br /></td></tr>
+<tr class="separator:af5b510419a496c8a150e3747f94edc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3340303dabcfd03dbb98b6a9dd68f04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#ae3340303dabcfd03dbb98b6a9dd68f04">setGatewayId</a> (std::uint8_t value)</td></tr>
 <tr class="memdesc:ae3340303dabcfd03dbb98b6a9dd68f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set gateway numeric ID to be advertised.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#ae3340303dabcfd03dbb98b6a9dd68f04">More...</a><br /></td></tr>
 <tr class="separator:ae3340303dabcfd03dbb98b6a9dd68f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade220efe4c94dda44a5e3db214825382"><td class="memItemLeft" align="right" valign="top"><a id="ade220efe4c94dda44a5e3db214825382"></a>
+std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#ade220efe4c94dda44a5e3db214825382">getGatewayId</a> () const</td></tr>
+<tr class="memdesc:ade220efe4c94dda44a5e3db214825382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current gateway numeric ID configuration. <br /></td></tr>
+<tr class="separator:ade220efe4c94dda44a5e3db214825382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ea0af2a2065e6c311bd74aaebd4489"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a12ea0af2a2065e6c311bd74aaebd4489">start</a> ()</td></tr>
 <tr class="memdesc:a12ea0af2a2065e6c311bd74aaebd4489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the operation of the object.  <a href="classcc__mqttsn__gateway_1_1Gateway.html#a12ea0af2a2065e6c311bd74aaebd4489">More...</a><br /></td></tr>
 <tr class="separator:a12ea0af2a2065e6c311bd74aaebd4489"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,14 +129,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a656234af2ad8d324f0d3e2595c6826fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a0a2a84f31630c29877224efe42955072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a2a84f31630c29877224efe42955072">&#9670;&nbsp;</a></span>NextTickProgramReqCb</h2>
+<a id="a8a6c83ec82aa22f872b29f4d79d5713f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6c83ec82aa22f872b29f4d79d5713f">&#9670;&nbsp;</a></span>NextTickProgramReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void (unsigned ms)&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a0a2a84f31630c29877224efe42955072">cc_mqttsn_gateway::Gateway::NextTickProgramReqCb</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a8a6c83ec82aa22f872b29f4d79d5713f">cc_mqttsn_gateway::Gateway::NextTickProgramReqCb</a> =  std::function&lt;void (unsigned ms)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -143,14 +151,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a74f1a2f9caba1f8c8ba41bcf4f5ae58a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74f1a2f9caba1f8c8ba41bcf4f5ae58a">&#9670;&nbsp;</a></span>SendDataReqCb</h2>
+<a id="a574d84b0a91a0f9b4cc7b814c6d1de14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a574d84b0a91a0f9b4cc7b814c6d1de14">&#9670;&nbsp;</a></span>SendDataReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void (const std::uint8_t* buf, std::size_t bufSize)&gt; <a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a74f1a2f9caba1f8c8ba41bcf4f5ae58a">cc_mqttsn_gateway::Gateway::SendDataReqCb</a></td>
+          <td class="memname">using <a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a574d84b0a91a0f9b4cc7b814c6d1de14">cc_mqttsn_gateway::Gateway::SendDataReqCb</a> =  std::function&lt;void (const std::uint8_t* buf, std::size_t bufSize)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -229,7 +237,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Gateway::setNextTickProgramReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a0a2a84f31630c29877224efe42955072">NextTickProgramReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a8a6c83ec82aa22f872b29f4d79d5713f">NextTickProgramReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -255,7 +263,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void cc_mqttsn_gateway::Gateway::setSendDataReqCb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a74f1a2f9caba1f8c8ba41bcf4f5ae58a">SendDataReqCb</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcc__mqttsn__gateway_1_1Gateway.html#a574d84b0a91a0f9b4cc7b814c6d1de14">SendDataReqCb</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -318,7 +326,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 14:02:11 for MQTT-SN Gateway Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

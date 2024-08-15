@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['_7econfig_266',['~Config',['../classcc__mqttsn__gateway_1_1Config.html#adca283126e0870bd7219f2b126a93c26',1,'cc_mqttsn_gateway::Config']]],
-  ['_7egateway_267',['~Gateway',['../classcc__mqttsn__gateway_1_1Gateway.html#abb426c1dcbd1eb7d59a45b3bf8cf315e',1,'cc_mqttsn_gateway::Gateway']]],
-  ['_7esession_268',['~Session',['../classcc__mqttsn__gateway_1_1Session.html#a2be3a985fad6e8673acfe5103fd0a39b',1,'cc_mqttsn_gateway::Session']]]
+  ['version_339',['version',['../namespacecc__mqttsn__gateway.html#aac604ca0516141eb5bee59f71c2561f5',1,'cc_mqttsn_gateway']]],
+  ['versioncreate_340',['versionCreate',['../namespacecc__mqttsn__gateway.html#ae8eaf00a8ad57fc6dcd4aa871c0338f0',1,'cc_mqttsn_gateway']]],
+  ['versionmajor_341',['versionMajor',['../namespacecc__mqttsn__gateway.html#a52b8767c4b0f749962d1984f23abc116',1,'cc_mqttsn_gateway']]],
+  ['versionminor_342',['versionMinor',['../namespacecc__mqttsn__gateway.html#a34ba0f3b942ce469b28ec64204a99222',1,'cc_mqttsn_gateway']]],
+  ['versionpatch_343',['versionPatch',['../namespacecc__mqttsn__gateway.html#ac7b6dc65d087217896b34012b7c7e513',1,'cc_mqttsn_gateway']]]
 ];

@@ -83,8 +83,14 @@ $(function() {
 <li>cc_mqttsn_gw_config_broker_address()
 : <a class="el" href="gateway__all_8h.html#a388feb43456b21e988d7f3e587b5c516">gateway_all.h</a>
 </li>
+<li>cc_mqttsn_gw_config_broker_connection_type()
+: <a class="el" href="gateway__all_8h.html#af6620432f351d7d109538e4323ade62b">gateway_all.h</a>
+</li>
 <li>cc_mqttsn_gw_config_broker_port()
 : <a class="el" href="gateway__all_8h.html#a52604b98bac8782f7b901de08a559113">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_config_client_connection_type()
+: <a class="el" href="gateway__all_8h.html#a5ad5992d18da51df9c95dd8d5c7c5c91">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_config_default_client_id()
 : <a class="el" href="gateway__all_8h.html#a307a7ff583fd5e2673a53bb0ba253255">gateway_all.h</a>
@@ -103,6 +109,9 @@ $(function() {
 </li>
 <li>cc_mqttsn_gw_config_id()
 : <a class="el" href="gateway__all_8h.html#acc49bfebd121a1d8f6a42665460a3e1b">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_config_log_file()
+: <a class="el" href="gateway__all_8h.html#a9cb4f84b328a2bdccf6525654493fdc9">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_config_parse()
 : <a class="el" href="gateway__all_8h.html#a634f978feb2b7ca22fe3af51843ff9ff">gateway_all.h</a>
@@ -131,14 +140,17 @@ $(function() {
 <li>cc_mqttsn_gw_free()
 : <a class="el" href="gateway__all_8h.html#a9040a8b3c523bf4b87ebd963d22e8fa3">gateway_all.h</a>
 </li>
+<li>cc_mqttsn_gw_get_advertise_period()
+: <a class="el" href="gateway__all_8h.html#ac3ddca1373a061676983b97150ab9c38">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_get_id()
+: <a class="el" href="gateway__all_8h.html#ac567d1d09dc881c3dc8bd2464e0b3820">gateway_all.h</a>
+</li>
 <li>cc_mqttsn_gw_session_add_predefined_topic()
 : <a class="el" href="gateway__all_8h.html#a065cabe188acc70ffc769372d41d8acc">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_session_alloc()
 : <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144">gateway_all.h</a>
-</li>
-<li>cc_mqttsn_gw_session_broker_connected()
-: <a class="el" href="gateway__all_8h.html#abde1a8b4584ce9eda7d2f136d722eddb">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_session_data_from_broker()
 : <a class="el" href="gateway__all_8h.html#add5b16f698d0ff7af1add101f9386c56">gateway_all.h</a>
@@ -149,8 +161,32 @@ $(function() {
 <li>cc_mqttsn_gw_session_free()
 : <a class="el" href="gateway__all_8h.html#a988a27a795d74e569fe9be3dd93fbf2a">gateway_all.h</a>
 </li>
+<li>cc_mqttsn_gw_session_get_broker_connected()
+: <a class="el" href="gateway__all_8h.html#a20e9c0966372dc809f8db6d8689cb3ea">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_get_default_client_id()
+: <a class="el" href="gateway__all_8h.html#a7fcb267bffcc508945e2637a3291acb8">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_get_id()
+: <a class="el" href="gateway__all_8h.html#a47c783c426d93bda47e488cd108b32e1">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_get_pub_only_keep_alive()
+: <a class="el" href="gateway__all_8h.html#add5e69dcad73beb03118f7da60046cdc">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_get_retry_count()
+: <a class="el" href="gateway__all_8h.html#ad77b6399c0bfdbff462020afa05a3728">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_get_retry_period()
+: <a class="el" href="gateway__all_8h.html#aa2e77ceea4b2beff035f8787a9a37e3d">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_get_sleeping_client_msg_limit()
+: <a class="el" href="gateway__all_8h.html#a1729da897d177ac7a8599f9e2b7cd246">gateway_all.h</a>
+</li>
 <li>cc_mqttsn_gw_session_set_auth_info_req_cb()
 : <a class="el" href="gateway__all_8h.html#a6f97671aaae458452921533ee58868ad">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_set_broker_connected()
+: <a class="el" href="gateway__all_8h.html#ad91cf390da725478e498f1b5db319fcb">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_session_set_broker_reconnect_req_cb()
 : <a class="el" href="gateway__all_8h.html#a14fb2c660c6f321f061e99c66b343721">gateway_all.h</a>
@@ -163,6 +199,15 @@ $(function() {
 </li>
 <li>cc_mqttsn_gw_session_set_default_client_id()
 : <a class="el" href="gateway__all_8h.html#ae3bc2ab5acee7ee27bc17aa0cf98ab7f">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_set_error_report_cb()
+: <a class="el" href="gateway__all_8h.html#a010e04f3b13369cdd67f022f13cd0879">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_set_fwd_enc_session_created_cb()
+: <a class="el" href="gateway__all_8h.html#ac415881691d329807c5492e9b81b84f4">gateway_all.h</a>
+</li>
+<li>cc_mqttsn_gw_session_set_fwd_enc_session_deleted_cb()
+: <a class="el" href="gateway__all_8h.html#a53ac516ddbbf1050452e9592bac45570">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_session_set_id()
 : <a class="el" href="gateway__all_8h.html#ab43525af01f83192fd7cb0c6297d3da3">gateway_all.h</a>
@@ -177,13 +222,13 @@ $(function() {
 : <a class="el" href="gateway__all_8h.html#abd9a851d685fcac285aa3806d1865161">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_session_set_send_data_to_broker_cb()
-: <a class="el" href="gateway__all_8h.html#a01677e8c4af48a65450e1177de10a039">gateway_all.h</a>
+: <a class="el" href="gateway__all_8h.html#a25285e430dfe8e094448a6f97497191f">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_session_set_send_data_to_client_cb()
-: <a class="el" href="gateway__all_8h.html#aa21ea0c1cb9dff11dd5ef85aee76b0bc">gateway_all.h</a>
+: <a class="el" href="gateway__all_8h.html#ac360b1fc3f387ba822c0017a061b79dd">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_session_set_sleeping_client_msg_limit()
-: <a class="el" href="gateway__all_8h.html#ad4c4a37615011d8e08ef4cea5bdfba2b">gateway_all.h</a>
+: <a class="el" href="gateway__all_8h.html#abfe81acfdb4d7895bc81bb0de4fc8c6d">gateway_all.h</a>
 </li>
 <li>cc_mqttsn_gw_session_set_term_req_cb()
 : <a class="el" href="gateway__all_8h.html#a89e01f95470aefe80752c495d7b45268">gateway_all.h</a>
@@ -228,7 +273,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 14:02:11 for MQTT-SN Gateway Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

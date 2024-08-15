@@ -1,25 +1,6 @@
 var searchData=
 [
-  ['session_237',['Session',['../classcc__mqttsn__gateway_1_1Session.html#a0f2bce948b600f2dbdba12834b3fdabb',1,'cc_mqttsn_gateway::Session']]],
-  ['setadvertiseperiod_238',['setAdvertisePeriod',['../classcc__mqttsn__gateway_1_1Gateway.html#adb1827fad98031ab79d73bbc8ff08117',1,'cc_mqttsn_gateway::Gateway']]],
-  ['setauthinforeqcb_239',['setAuthInfoReqCb',['../classcc__mqttsn__gateway_1_1Session.html#ab519faa29c6d2386e2b305fdb2289bbf',1,'cc_mqttsn_gateway::Session']]],
-  ['setbrokerconnected_240',['setBrokerConnected',['../classcc__mqttsn__gateway_1_1Session.html#ab3ce2cc8b3a964625a6b59c70ceb8a9c',1,'cc_mqttsn_gateway::Session']]],
-  ['setbrokerreconnectreqcb_241',['setBrokerReconnectReqCb',['../classcc__mqttsn__gateway_1_1Session.html#a2db095effa29cff1497342e4e0d638ac',1,'cc_mqttsn_gateway::Session']]],
-  ['setcanceltickwaitreqcb_242',['setCancelTickWaitReqCb',['../classcc__mqttsn__gateway_1_1Session.html#a5219a534cc2f71375f1bba76e3819695',1,'cc_mqttsn_gateway::Session']]],
-  ['setclientconnectedreportcb_243',['setClientConnectedReportCb',['../classcc__mqttsn__gateway_1_1Session.html#aa78b22f6b7144f598639160703376292',1,'cc_mqttsn_gateway::Session']]],
-  ['setdefaultclientid_244',['setDefaultClientId',['../classcc__mqttsn__gateway_1_1Session.html#a31a9ce1bc29973c0659044f752ff3d14',1,'cc_mqttsn_gateway::Session']]],
-  ['setgatewayid_245',['setGatewayId',['../classcc__mqttsn__gateway_1_1Gateway.html#ae3340303dabcfd03dbb98b6a9dd68f04',1,'cc_mqttsn_gateway::Gateway::setGatewayId()'],['../classcc__mqttsn__gateway_1_1Session.html#a6120e5c84cfa3e7a577c28ce5351cd2f',1,'cc_mqttsn_gateway::Session::setGatewayId()']]],
-  ['setnexttickprogramreqcb_246',['setNextTickProgramReqCb',['../classcc__mqttsn__gateway_1_1Gateway.html#a00e7d543ec8b9f1c7e356e7ec56f3ea8',1,'cc_mqttsn_gateway::Gateway::setNextTickProgramReqCb()'],['../classcc__mqttsn__gateway_1_1Session.html#ad03abf3c8beaad947016bea6a5e66d85',1,'cc_mqttsn_gateway::Session::setNextTickProgramReqCb(NextTickProgramReqCb &amp;&amp;func)']]],
-  ['setpubonlykeepalive_247',['setPubOnlyKeepAlive',['../classcc__mqttsn__gateway_1_1Session.html#ad9933a5769200858d7faa2bf1f374d82',1,'cc_mqttsn_gateway::Session']]],
-  ['setretrycount_248',['setRetryCount',['../classcc__mqttsn__gateway_1_1Session.html#a65eea77d5c98b46c5ac12053976b0771',1,'cc_mqttsn_gateway::Session']]],
-  ['setretryperiod_249',['setRetryPeriod',['../classcc__mqttsn__gateway_1_1Session.html#a4159f98133b10a30982ee6c54e7c9be6',1,'cc_mqttsn_gateway::Session']]],
-  ['setsenddatabrokerreqcb_250',['setSendDataBrokerReqCb',['../classcc__mqttsn__gateway_1_1Session.html#a56eaafc3518f45db61b4482cb7626464',1,'cc_mqttsn_gateway::Session']]],
-  ['setsenddataclientreqcb_251',['setSendDataClientReqCb',['../classcc__mqttsn__gateway_1_1Session.html#a0ae1e01456a2e22361627d02371f685f',1,'cc_mqttsn_gateway::Session']]],
-  ['setsenddatareqcb_252',['setSendDataReqCb',['../classcc__mqttsn__gateway_1_1Gateway.html#abce790ddf300647f8ff52bfc84385727',1,'cc_mqttsn_gateway::Gateway']]],
-  ['setsleepingclientmsglimit_253',['setSleepingClientMsgLimit',['../classcc__mqttsn__gateway_1_1Session.html#a0b96e11b66b6ece04f8a331c9b72600c',1,'cc_mqttsn_gateway::Session']]],
-  ['setterminationreqcb_254',['setTerminationReqCb',['../classcc__mqttsn__gateway_1_1Session.html#a7325fc0c10dc1cae59a6ff9a2252e7ee',1,'cc_mqttsn_gateway::Session']]],
-  ['settopicidallocationrange_255',['setTopicIdAllocationRange',['../classcc__mqttsn__gateway_1_1Session.html#adfe4fadd74fdf75b997f10604093d91e',1,'cc_mqttsn_gateway::Session']]],
-  ['sleepingclientmsglimit_256',['sleepingClientMsgLimit',['../classcc__mqttsn__gateway_1_1Config.html#a28e64dd0a14c5408eca3932d3ee6356e',1,'cc_mqttsn_gateway::Config']]],
-  ['start_257',['start',['../classcc__mqttsn__gateway_1_1Gateway.html#a12ea0af2a2065e6c311bd74aaebd4489',1,'cc_mqttsn_gateway::Gateway::start()'],['../classcc__mqttsn__gateway_1_1Session.html#a12513af6a5f2db6ebc57947771379bca',1,'cc_mqttsn_gateway::Session::start()']]],
-  ['stop_258',['stop',['../classcc__mqttsn__gateway_1_1Gateway.html#a08c3c68c6928afebd06c5dd045571366',1,'cc_mqttsn_gateway::Gateway::stop()'],['../classcc__mqttsn__gateway_1_1Session.html#ae4a65f7acc2a8af7170daccc35278de5',1,'cc_mqttsn_gateway::Session::stop()']]]
+  ['read_309',['read',['../classcc__mqttsn__gateway_1_1Config.html#aaeca1e557ca787f0a42688a0203f6135',1,'cc_mqttsn_gateway::Config']]],
+  ['retrycount_310',['retryCount',['../classcc__mqttsn__gateway_1_1Config.html#a662953cdcd8538668c25dcd94c85401d',1,'cc_mqttsn_gateway::Config']]],
+  ['retryperiod_311',['retryPeriod',['../classcc__mqttsn__gateway_1_1Config.html#adf7715a42ebb748427fb1dfa9d8a4121',1,'cc_mqttsn_gateway::Config']]]
 ];

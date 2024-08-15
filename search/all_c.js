@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['username_138',['username',['../structcc__mqttsn__gateway_1_1Config_1_1AuthInfo.html#ac0d58296ad1aeaee984841b8a0912ebb',1,'cc_mqttsn_gateway::Config::AuthInfo::username()'],['../structCC__MqttsnAuthInfo.html#a932115770b3e8b50ea7ebc16de35e525',1,'CC_MqttsnAuthInfo::username()']]]
+  ['read_153',['read',['../classcc__mqttsn__gateway_1_1Config.html#aaeca1e557ca787f0a42688a0203f6135',1,'cc_mqttsn_gateway::Config']]],
+  ['retrycount_154',['retryCount',['../classcc__mqttsn__gateway_1_1Config.html#a662953cdcd8538668c25dcd94c85401d',1,'cc_mqttsn_gateway::Config']]],
+  ['retryperiod_155',['retryPeriod',['../classcc__mqttsn__gateway_1_1Config.html#adf7715a42ebb748427fb1dfa9d8a4121',1,'cc_mqttsn_gateway::Config']]]
 ];

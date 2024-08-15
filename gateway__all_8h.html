@@ -69,6 +69,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">gateway_all.h File Reference</div>  </div>
@@ -82,211 +83,284 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for gateway object used in all <b>cc_mqttsn_gw_*</b> functions.  <a href="structCC__MqttsnGatewayHandle.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for session object used in all <b>cc_mqttsn_gw_session_*</b> functions.  <a href="structCC__MqttsnSessionHandle.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCC__MqttsnPredefinedTopicInfo.html">CC_MqttsnPredefinedTopicInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info about single predefined topic.  <a href="structCC__MqttsnPredefinedTopicInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCC__MqttsnAuthInfo.html">CC_MqttsnAuthInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authentication infor for a single client.  <a href="structCC__MqttsnAuthInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for configuration object used in all <b>cc_mqttsn_gw_config_*</b> functions.  <a href="structCC__MqttsnConfigHandle.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a0c82ed657512ac27a3073251f010d799"><td class="memItemLeft" align="right" valign="top"><a id="a0c82ed657512ac27a3073251f010d799"></a>
+typedef struct CC_MqttsnGateway *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a></td></tr>
+<tr class="memdesc:a0c82ed657512ac27a3073251f010d799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for gateway object used in all <b>cc_mqttsn_gw_*</b> functions. <br /></td></tr>
+<tr class="separator:a0c82ed657512ac27a3073251f010d799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd6669f616cda364529db9d057c9730"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#addd6669f616cda364529db9d057c9730">CC_MqttsnGwTickReqCb</a>) (void *userData, unsigned duration)</td></tr>
 <tr class="memdesc:addd6669f616cda364529db9d057c9730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback function, to be used to request time measurement for the <b>Gateway</b> object.  <a href="gateway__all_8h.html#addd6669f616cda364529db9d057c9730">More...</a><br /></td></tr>
 <tr class="separator:addd6669f616cda364529db9d057c9730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d9453cd09cbd553e2082fea3586cc9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ac3d9453cd09cbd553e2082fea3586cc9">CC_MqttsnGwBroadcastReqCb</a>) (void *userData, const unsigned char *buf, unsigned bufLen)</td></tr>
 <tr class="memdesc:ac3d9453cd09cbd553e2082fea3586cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback function, to be used to request broadcast of serialised <b>ADVERTISE</b> message.  <a href="gateway__all_8h.html#ac3d9453cd09cbd553e2082fea3586cc9">More...</a><br /></td></tr>
 <tr class="separator:ac3d9453cd09cbd553e2082fea3586cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a28b9a3d11fe5dab0a39a66aabc31be"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a4a28b9a3d11fe5dab0a39a66aabc31be">CC_MqttsnSessionTickReqCb</a>) (void *userData, unsigned duration)</td></tr>
-<tr class="memdesc:a4a28b9a3d11fe5dab0a39a66aabc31be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request new time measurement.  <a href="gateway__all_8h.html#a4a28b9a3d11fe5dab0a39a66aabc31be">More...</a><br /></td></tr>
-<tr class="separator:a4a28b9a3d11fe5dab0a39a66aabc31be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec73e5615a45b2d8f882bd675ccaa28b"><td class="memItemLeft" align="right" valign="top">typedef unsigned(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aec73e5615a45b2d8f882bd675ccaa28b">CC_MqttsnSessionCancelTickReqCb</a>) (void *userData)</td></tr>
-<tr class="memdesc:aec73e5615a45b2d8f882bd675ccaa28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to cancel existing time measurement.  <a href="gateway__all_8h.html#aec73e5615a45b2d8f882bd675ccaa28b">More...</a><br /></td></tr>
-<tr class="separator:aec73e5615a45b2d8f882bd675ccaa28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5624515961a47a371a30790c7d7757"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aea5624515961a47a371a30790c7d7757">CC_MqttsnSessionSendDataReqCb</a>) (void *userData, const unsigned char *buf, unsigned bufLen)</td></tr>
-<tr class="memdesc:aea5624515961a47a371a30790c7d7757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request delivery of serialised message to the client or broker.  <a href="gateway__all_8h.html#aea5624515961a47a371a30790c7d7757">More...</a><br /></td></tr>
-<tr class="separator:aea5624515961a47a371a30790c7d7757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a433a688b80306081d23971fac5f01220"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a433a688b80306081d23971fac5f01220">CC_MqttsnSessionTermReqCb</a>) (void *userData)</td></tr>
-<tr class="memdesc:a433a688b80306081d23971fac5f01220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request session termination.  <a href="gateway__all_8h.html#a433a688b80306081d23971fac5f01220">More...</a><br /></td></tr>
-<tr class="separator:a433a688b80306081d23971fac5f01220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f9c8176a81a486eeb7d4af15ea765f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a96f9c8176a81a486eeb7d4af15ea765f">CC_MqttsnSessionBrokerReconnectReqCb</a>) (void *userData)</td></tr>
-<tr class="memdesc:a96f9c8176a81a486eeb7d4af15ea765f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request reconnection to the broker.  <a href="gateway__all_8h.html#a96f9c8176a81a486eeb7d4af15ea765f">More...</a><br /></td></tr>
-<tr class="separator:a96f9c8176a81a486eeb7d4af15ea765f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57e2bd8487d9c42445f228d8683cb24"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#af57e2bd8487d9c42445f228d8683cb24">CC_MqttsnSessionClientConnectReportCb</a>) (void *userData, const char *clientId)</td></tr>
-<tr class="memdesc:af57e2bd8487d9c42445f228d8683cb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to report client ID of the newly connected MQTT-SN client.  <a href="gateway__all_8h.html#af57e2bd8487d9c42445f228d8683cb24">More...</a><br /></td></tr>
-<tr class="separator:af57e2bd8487d9c42445f228d8683cb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0839c2b9bcab510d7e12d087823914c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aa0839c2b9bcab510d7e12d087823914c">CC_MqttsnSessionAuthInfoReqCb</a>) (void *userData, const char *clientId, const char **username, const unsigned char **password, unsigned *passwordLen)</td></tr>
-<tr class="memdesc:aa0839c2b9bcab510d7e12d087823914c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request authentication information of the client that is trying to connect.  <a href="gateway__all_8h.html#aa0839c2b9bcab510d7e12d087823914c">More...</a><br /></td></tr>
-<tr class="separator:aa0839c2b9bcab510d7e12d087823914c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a903f928f9f0166dd06326da57aa0d0"><td class="memItemLeft" align="right" valign="top"><a id="a1a903f928f9f0166dd06326da57aa0d0"></a>
+typedef struct CC_MqttsnSession *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a></td></tr>
+<tr class="memdesc:a1a903f928f9f0166dd06326da57aa0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for session object used in all <b>cc_mqttsn_gw_session_*</b> functions. <br /></td></tr>
+<tr class="separator:a1a903f928f9f0166dd06326da57aa0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0481e1b510d1f190a57e80513f66d2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a7c0481e1b510d1f190a57e80513f66d2">CC_MqttsnSessionTickReqCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, unsigned duration)</td></tr>
+<tr class="memdesc:a7c0481e1b510d1f190a57e80513f66d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request new time measurement.  <a href="gateway__all_8h.html#a7c0481e1b510d1f190a57e80513f66d2">More...</a><br /></td></tr>
+<tr class="separator:a7c0481e1b510d1f190a57e80513f66d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8242c3e0705e1b220ea69f966e5709c"><td class="memItemLeft" align="right" valign="top">typedef unsigned(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ad8242c3e0705e1b220ea69f966e5709c">CC_MqttsnSessionCancelTickReqCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:ad8242c3e0705e1b220ea69f966e5709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to cancel existing time measurement.  <a href="gateway__all_8h.html#ad8242c3e0705e1b220ea69f966e5709c">More...</a><br /></td></tr>
+<tr class="separator:ad8242c3e0705e1b220ea69f966e5709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336b91dda9d64582a23024fcf63e8baa"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a336b91dda9d64582a23024fcf63e8baa">CC_MqttsnSessionClientSendDataReqCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const unsigned char *buf, unsigned bufLen, unsigned broadcastRadius)</td></tr>
+<tr class="memdesc:a336b91dda9d64582a23024fcf63e8baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request delivery of serialised message to the client.  <a href="gateway__all_8h.html#a336b91dda9d64582a23024fcf63e8baa">More...</a><br /></td></tr>
+<tr class="separator:a336b91dda9d64582a23024fcf63e8baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00200a85402d301e9d3aa525569aab2b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a00200a85402d301e9d3aa525569aab2b">CC_MqttsnSessionBrokerSendDataReqCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const unsigned char *buf, unsigned bufLen)</td></tr>
+<tr class="memdesc:a00200a85402d301e9d3aa525569aab2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request delivery of serialised message to the broker.  <a href="gateway__all_8h.html#a00200a85402d301e9d3aa525569aab2b">More...</a><br /></td></tr>
+<tr class="separator:a00200a85402d301e9d3aa525569aab2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a186cc987ef6aba073d83ae7acc058"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a91a186cc987ef6aba073d83ae7acc058">CC_MqttsnSessionTermReqCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:a91a186cc987ef6aba073d83ae7acc058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback, used to request session termination.  <a href="gateway__all_8h.html#a91a186cc987ef6aba073d83ae7acc058">More...</a><br /></td></tr>
+<tr class="separator:a91a186cc987ef6aba073d83ae7acc058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca310c62397cb63f026228c14013eb7"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a3ca310c62397cb63f026228c14013eb7">CC_MqttsnSessionBrokerReconnectReqCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:a3ca310c62397cb63f026228c14013eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request reconnection to the broker.  <a href="gateway__all_8h.html#a3ca310c62397cb63f026228c14013eb7">More...</a><br /></td></tr>
+<tr class="separator:a3ca310c62397cb63f026228c14013eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbfce761785f6d76c168d87129feed2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a6cbfce761785f6d76c168d87129feed2">CC_MqttsnSessionClientConnectReportCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const char *clientId)</td></tr>
+<tr class="memdesc:a6cbfce761785f6d76c168d87129feed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to report client ID of the newly connected MQTT-SN client.  <a href="gateway__all_8h.html#a6cbfce761785f6d76c168d87129feed2">More...</a><br /></td></tr>
+<tr class="separator:a6cbfce761785f6d76c168d87129feed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2501bbb485850e47b06f531ac8db87b5"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a2501bbb485850e47b06f531ac8db87b5">CC_MqttsnSessionAuthInfoReqCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const char *clientId, const char **username, const unsigned char **password, unsigned *passwordLen)</td></tr>
+<tr class="memdesc:a2501bbb485850e47b06f531ac8db87b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to request authentication information of the client that is trying to connect.  <a href="gateway__all_8h.html#a2501bbb485850e47b06f531ac8db87b5">More...</a><br /></td></tr>
+<tr class="separator:a2501bbb485850e47b06f531ac8db87b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af504246cb110a218c41ceab98183997c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#af504246cb110a218c41ceab98183997c">CC_MqttsnSessionErrorReportCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const char *msg)</td></tr>
+<tr class="memdesc:af504246cb110a218c41ceab98183997c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to report error messages detected by the session.  <a href="gateway__all_8h.html#af504246cb110a218c41ceab98183997c">More...</a><br /></td></tr>
+<tr class="separator:af504246cb110a218c41ceab98183997c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544329fe34dcd490bcf448e216102bd3"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a544329fe34dcd490bcf448e216102bd3">CC_MqttsnSessionFwdEncSessionCreatedCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:a544329fe34dcd490bcf448e216102bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to report forwarding encapsulated session creation.  <a href="gateway__all_8h.html#a544329fe34dcd490bcf448e216102bd3">More...</a><br /></td></tr>
+<tr class="separator:a544329fe34dcd490bcf448e216102bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb974368fb839dc683a84427774e4882"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#abb974368fb839dc683a84427774e4882">CC_MqttsnSessionFwdEncSessionDeletedCb</a>) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:abb974368fb839dc683a84427774e4882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of callback used to report forwarding encapsulated session about to be deleted.  <a href="gateway__all_8h.html#abb974368fb839dc683a84427774e4882">More...</a><br /></td></tr>
+<tr class="separator:abb974368fb839dc683a84427774e4882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d84c0578da337c659977b26287bd39"><td class="memItemLeft" align="right" valign="top"><a id="a10d84c0578da337c659977b26287bd39"></a>
+typedef struct CC_MqttsnConfig *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a></td></tr>
+<tr class="memdesc:a10d84c0578da337c659977b26287bd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for session object used in all <b>cc_mqttsn_gw_config_*</b> functions. <br /></td></tr>
+<tr class="separator:a10d84c0578da337c659977b26287bd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a9dc62489f926bed4e7116b79fe1bc51f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9dc62489f926bed4e7116b79fe1bc51f">CC_MqttsnClientConnectionType</a> { <a class="el" href="gateway__all_8h.html#a9dc62489f926bed4e7116b79fe1bc51faf9f25f717ade3e8fbc696981965ad3a0">CC_MqttsnClientConnectionType_Udp</a>
+, <a class="el" href="gateway__all_8h.html#a9dc62489f926bed4e7116b79fe1bc51fa10dbac4a53ed2d8bd361889fcaaccb06">CC_MqttsnClientConnectionType_ValuesLimit</a>
+ }</td></tr>
+<tr class="memdesc:a9dc62489f926bed4e7116b79fe1bc51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client I/O socket connection type.  <a href="gateway__all_8h.html#a9dc62489f926bed4e7116b79fe1bc51f">More...</a><br /></td></tr>
+<tr class="separator:a9dc62489f926bed4e7116b79fe1bc51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de0a1cc46b4fdd12a66e38b7397145f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a2de0a1cc46b4fdd12a66e38b7397145f">CC_MqttsnBrokerConnectionType</a> { <a class="el" href="gateway__all_8h.html#a2de0a1cc46b4fdd12a66e38b7397145fa798ef08d5cff599eb900c5ea1c1d6e74">CC_MqttsnBrokerConnectionType_Tcp</a>
+, <a class="el" href="gateway__all_8h.html#a2de0a1cc46b4fdd12a66e38b7397145fa03f65faf69d73f10855b98ebdc559312">CC_MqttsnBrokerConnectionType_ValuesLimit</a>
+ }</td></tr>
+<tr class="memdesc:a2de0a1cc46b4fdd12a66e38b7397145f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broker I/O socket connection type.  <a href="gateway__all_8h.html#a2de0a1cc46b4fdd12a66e38b7397145f">More...</a><br /></td></tr>
+<tr class="separator:a2de0a1cc46b4fdd12a66e38b7397145f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa2706de700b42390c05d51f30e74eb75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aa2706de700b42390c05d51f30e74eb75">cc_mqttsn_gw_alloc</a> (void)</td></tr>
+<tr class="memitem:aa2706de700b42390c05d51f30e74eb75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aa2706de700b42390c05d51f30e74eb75">cc_mqttsn_gw_alloc</a> (void)</td></tr>
 <tr class="memdesc:aa2706de700b42390c05d51f30e74eb75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate <b>Gateway</b> object.  <a href="gateway__all_8h.html#aa2706de700b42390c05d51f30e74eb75">More...</a><br /></td></tr>
 <tr class="separator:aa2706de700b42390c05d51f30e74eb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9040a8b3c523bf4b87ebd963d22e8fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9040a8b3c523bf4b87ebd963d22e8fa3">cc_mqttsn_gw_free</a> (<a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> gw)</td></tr>
+<tr class="memitem:a9040a8b3c523bf4b87ebd963d22e8fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9040a8b3c523bf4b87ebd963d22e8fa3">cc_mqttsn_gw_free</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw)</td></tr>
 <tr class="memdesc:a9040a8b3c523bf4b87ebd963d22e8fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free allocated <b>Gateway</b> object.  <a href="gateway__all_8h.html#a9040a8b3c523bf4b87ebd963d22e8fa3">More...</a><br /></td></tr>
 <tr class="separator:a9040a8b3c523bf4b87ebd963d22e8fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77fbdc391f7f21f5ada52367f693df8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a77fbdc391f7f21f5ada52367f693df8e">cc_mqttsn_gw_set_advertise_period</a> (<a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> gw, unsigned short value)</td></tr>
+<tr class="memitem:a77fbdc391f7f21f5ada52367f693df8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a77fbdc391f7f21f5ada52367f693df8e">cc_mqttsn_gw_set_advertise_period</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw, unsigned short value)</td></tr>
 <tr class="memdesc:a77fbdc391f7f21f5ada52367f693df8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the advertise period.  <a href="gateway__all_8h.html#a77fbdc391f7f21f5ada52367f693df8e">More...</a><br /></td></tr>
 <tr class="separator:a77fbdc391f7f21f5ada52367f693df8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d63d1bce2bf12c7289f30ed2e4bb3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a55d63d1bce2bf12c7289f30ed2e4bb3f">cc_mqttsn_gw_set_id</a> (<a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> gw, unsigned char id)</td></tr>
+<tr class="memitem:ac3ddca1373a061676983b97150ab9c38"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ac3ddca1373a061676983b97150ab9c38">cc_mqttsn_gw_get_advertise_period</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw)</td></tr>
+<tr class="memdesc:ac3ddca1373a061676983b97150ab9c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current configuration of the advertise period.  <a href="gateway__all_8h.html#ac3ddca1373a061676983b97150ab9c38">More...</a><br /></td></tr>
+<tr class="separator:ac3ddca1373a061676983b97150ab9c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d63d1bce2bf12c7289f30ed2e4bb3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a55d63d1bce2bf12c7289f30ed2e4bb3f">cc_mqttsn_gw_set_id</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw, unsigned char id)</td></tr>
 <tr class="memdesc:a55d63d1bce2bf12c7289f30ed2e4bb3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the numeric gateway ID.  <a href="gateway__all_8h.html#a55d63d1bce2bf12c7289f30ed2e4bb3f">More...</a><br /></td></tr>
 <tr class="separator:a55d63d1bce2bf12c7289f30ed2e4bb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ced6bfbe3e2a823971a1408b3a5851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a82ced6bfbe3e2a823971a1408b3a5851">cc_mqttsn_gw_set_tick_req_cb</a> (<a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> gw, <a class="el" href="gateway__all_8h.html#addd6669f616cda364529db9d057c9730">CC_MqttsnGwTickReqCb</a> cb, void *data)</td></tr>
+<tr class="memitem:ac567d1d09dc881c3dc8bd2464e0b3820"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ac567d1d09dc881c3dc8bd2464e0b3820">cc_mqttsn_gw_get_id</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw)</td></tr>
+<tr class="memdesc:ac567d1d09dc881c3dc8bd2464e0b3820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current configuration of the numeric gateway id.  <a href="gateway__all_8h.html#ac567d1d09dc881c3dc8bd2464e0b3820">More...</a><br /></td></tr>
+<tr class="separator:ac567d1d09dc881c3dc8bd2464e0b3820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ced6bfbe3e2a823971a1408b3a5851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a82ced6bfbe3e2a823971a1408b3a5851">cc_mqttsn_gw_set_tick_req_cb</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw, <a class="el" href="gateway__all_8h.html#addd6669f616cda364529db9d057c9730">CC_MqttsnGwTickReqCb</a> cb, void *data)</td></tr>
 <tr class="memdesc:a82ced6bfbe3e2a823971a1408b3a5851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback that requests to perform time measurement.  <a href="gateway__all_8h.html#a82ced6bfbe3e2a823971a1408b3a5851">More...</a><br /></td></tr>
 <tr class="separator:a82ced6bfbe3e2a823971a1408b3a5851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44220c12453971b0a234b13afcc19e5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a44220c12453971b0a234b13afcc19e5e">cc_mqttsn_gw_set_advertise_broadcast_req_cb</a> (<a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> gw, <a class="el" href="gateway__all_8h.html#ac3d9453cd09cbd553e2082fea3586cc9">CC_MqttsnGwBroadcastReqCb</a> cb, void *data)</td></tr>
+<tr class="memitem:a44220c12453971b0a234b13afcc19e5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a44220c12453971b0a234b13afcc19e5e">cc_mqttsn_gw_set_advertise_broadcast_req_cb</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw, <a class="el" href="gateway__all_8h.html#ac3d9453cd09cbd553e2082fea3586cc9">CC_MqttsnGwBroadcastReqCb</a> cb, void *data)</td></tr>
 <tr class="memdesc:a44220c12453971b0a234b13afcc19e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback that requests to send serialised <b>ADVERTISE</b> message.  <a href="gateway__all_8h.html#a44220c12453971b0a234b13afcc19e5e">More...</a><br /></td></tr>
 <tr class="separator:a44220c12453971b0a234b13afcc19e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fb71553d5edd4e73d0fab1e7b4109a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a05fb71553d5edd4e73d0fab1e7b4109a">cc_mqttsn_gw_start</a> (<a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> gw)</td></tr>
+<tr class="memitem:a05fb71553d5edd4e73d0fab1e7b4109a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a05fb71553d5edd4e73d0fab1e7b4109a">cc_mqttsn_gw_start</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw)</td></tr>
 <tr class="memdesc:a05fb71553d5edd4e73d0fab1e7b4109a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start operation of the <b>Gateway</b> object.  <a href="gateway__all_8h.html#a05fb71553d5edd4e73d0fab1e7b4109a">More...</a><br /></td></tr>
 <tr class="separator:a05fb71553d5edd4e73d0fab1e7b4109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf21a675bfeb0d4377da34ecfc1e016d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#acf21a675bfeb0d4377da34ecfc1e016d">cc_mqttsn_gw_stop</a> (<a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> gw)</td></tr>
+<tr class="memitem:acf21a675bfeb0d4377da34ecfc1e016d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#acf21a675bfeb0d4377da34ecfc1e016d">cc_mqttsn_gw_stop</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw)</td></tr>
 <tr class="memdesc:acf21a675bfeb0d4377da34ecfc1e016d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop operation of the <b>Gateway</b> object.  <a href="gateway__all_8h.html#acf21a675bfeb0d4377da34ecfc1e016d">More...</a><br /></td></tr>
 <tr class="separator:acf21a675bfeb0d4377da34ecfc1e016d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae588f219605bbbf02676bbc6f49a0870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ae588f219605bbbf02676bbc6f49a0870">cc_mqttsn_gw_tick</a> (<a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> gw)</td></tr>
+<tr class="memitem:ae588f219605bbbf02676bbc6f49a0870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ae588f219605bbbf02676bbc6f49a0870">cc_mqttsn_gw_tick</a> (<a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> gw)</td></tr>
 <tr class="memdesc:ae588f219605bbbf02676bbc6f49a0870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the <b>Gateway</b> object about requested time expiry.  <a href="gateway__all_8h.html#ae588f219605bbbf02676bbc6f49a0870">More...</a><br /></td></tr>
 <tr class="separator:ae588f219605bbbf02676bbc6f49a0870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c78e0c26c7400fa6508f6f51522f144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144">cc_mqttsn_gw_session_alloc</a> (void)</td></tr>
+<tr class="memitem:a5c78e0c26c7400fa6508f6f51522f144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144">cc_mqttsn_gw_session_alloc</a> (void)</td></tr>
 <tr class="memdesc:a5c78e0c26c7400fa6508f6f51522f144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate <b>Session</b> object.  <a href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144">More...</a><br /></td></tr>
 <tr class="separator:a5c78e0c26c7400fa6508f6f51522f144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988a27a795d74e569fe9be3dd93fbf2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a988a27a795d74e569fe9be3dd93fbf2a">cc_mqttsn_gw_session_free</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memitem:a988a27a795d74e569fe9be3dd93fbf2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a988a27a795d74e569fe9be3dd93fbf2a">cc_mqttsn_gw_session_free</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
 <tr class="memdesc:a988a27a795d74e569fe9be3dd93fbf2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free allocated <b>Session</b> object.  <a href="gateway__all_8h.html#a988a27a795d74e569fe9be3dd93fbf2a">More...</a><br /></td></tr>
 <tr class="separator:a988a27a795d74e569fe9be3dd93fbf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a29a45cb621da2a929ce19aae3c0e35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9a29a45cb621da2a929ce19aae3c0e35">cc_mqttsn_gw_session_set_tick_req_cb</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a4a28b9a3d11fe5dab0a39a66aabc31be">CC_MqttsnSessionTickReqCb</a> cb, void *data)</td></tr>
+<tr class="memitem:a9a29a45cb621da2a929ce19aae3c0e35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9a29a45cb621da2a929ce19aae3c0e35">cc_mqttsn_gw_session_set_tick_req_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a7c0481e1b510d1f190a57e80513f66d2">CC_MqttsnSessionTickReqCb</a> cb, void *data)</td></tr>
 <tr class="memdesc:a9a29a45cb621da2a929ce19aae3c0e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new time measurement is required.  <a href="gateway__all_8h.html#a9a29a45cb621da2a929ce19aae3c0e35">More...</a><br /></td></tr>
 <tr class="separator:a9a29a45cb621da2a929ce19aae3c0e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8d8ef98f2182880f4b1868602026c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9d8d8ef98f2182880f4b1868602026c0">cc_mqttsn_gw_session_set_cancel_tick_cb</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#aec73e5615a45b2d8f882bd675ccaa28b">CC_MqttsnSessionCancelTickReqCb</a> cb, void *data)</td></tr>
+<tr class="memitem:a9d8d8ef98f2182880f4b1868602026c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9d8d8ef98f2182880f4b1868602026c0">cc_mqttsn_gw_session_set_cancel_tick_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#ad8242c3e0705e1b220ea69f966e5709c">CC_MqttsnSessionCancelTickReqCb</a> cb, void *data)</td></tr>
 <tr class="memdesc:a9d8d8ef98f2182880f4b1868602026c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when previously requested time measurement needs to be cancelled.  <a href="gateway__all_8h.html#a9d8d8ef98f2182880f4b1868602026c0">More...</a><br /></td></tr>
 <tr class="separator:a9d8d8ef98f2182880f4b1868602026c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa21ea0c1cb9dff11dd5ef85aee76b0bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aa21ea0c1cb9dff11dd5ef85aee76b0bc">cc_mqttsn_gw_session_set_send_data_to_client_cb</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#aea5624515961a47a371a30790c7d7757">CC_MqttsnSessionSendDataReqCb</a> cb, void *data)</td></tr>
-<tr class="memdesc:aa21ea0c1cb9dff11dd5ef85aee76b0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new data needs to be sent to the <b>client</b>.  <a href="gateway__all_8h.html#aa21ea0c1cb9dff11dd5ef85aee76b0bc">More...</a><br /></td></tr>
-<tr class="separator:aa21ea0c1cb9dff11dd5ef85aee76b0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01677e8c4af48a65450e1177de10a039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a01677e8c4af48a65450e1177de10a039">cc_mqttsn_gw_session_set_send_data_to_broker_cb</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#aea5624515961a47a371a30790c7d7757">CC_MqttsnSessionSendDataReqCb</a> cb, void *data)</td></tr>
-<tr class="memdesc:a01677e8c4af48a65450e1177de10a039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new data needs to be sent to the <b>broker</b>.  <a href="gateway__all_8h.html#a01677e8c4af48a65450e1177de10a039">More...</a><br /></td></tr>
-<tr class="separator:a01677e8c4af48a65450e1177de10a039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89e01f95470aefe80752c495d7b45268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a89e01f95470aefe80752c495d7b45268">cc_mqttsn_gw_session_set_term_req_cb</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a433a688b80306081d23971fac5f01220">CC_MqttsnSessionTermReqCb</a> cb, void *data)</td></tr>
+<tr class="memitem:ac360b1fc3f387ba822c0017a061b79dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ac360b1fc3f387ba822c0017a061b79dd">cc_mqttsn_gw_session_set_send_data_to_client_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a336b91dda9d64582a23024fcf63e8baa">CC_MqttsnSessionClientSendDataReqCb</a> cb, void *data)</td></tr>
+<tr class="memdesc:ac360b1fc3f387ba822c0017a061b79dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new data needs to be sent to the <b>client</b>.  <a href="gateway__all_8h.html#ac360b1fc3f387ba822c0017a061b79dd">More...</a><br /></td></tr>
+<tr class="separator:ac360b1fc3f387ba822c0017a061b79dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25285e430dfe8e094448a6f97497191f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a25285e430dfe8e094448a6f97497191f">cc_mqttsn_gw_session_set_send_data_to_broker_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a00200a85402d301e9d3aa525569aab2b">CC_MqttsnSessionBrokerSendDataReqCb</a> cb, void *data)</td></tr>
+<tr class="memdesc:a25285e430dfe8e094448a6f97497191f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when new data needs to be sent to the <b>broker</b>.  <a href="gateway__all_8h.html#a25285e430dfe8e094448a6f97497191f">More...</a><br /></td></tr>
+<tr class="separator:a25285e430dfe8e094448a6f97497191f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e01f95470aefe80752c495d7b45268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a89e01f95470aefe80752c495d7b45268">cc_mqttsn_gw_session_set_term_req_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a91a186cc987ef6aba073d83ae7acc058">CC_MqttsnSessionTermReqCb</a> cb, void *data)</td></tr>
 <tr class="memdesc:a89e01f95470aefe80752c495d7b45268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when the <b>Session</b> needs to be terminated and the calling <b>Session</b> object deleted.  <a href="gateway__all_8h.html#a89e01f95470aefe80752c495d7b45268">More...</a><br /></td></tr>
 <tr class="separator:a89e01f95470aefe80752c495d7b45268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14fb2c660c6f321f061e99c66b343721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a14fb2c660c6f321f061e99c66b343721">cc_mqttsn_gw_session_set_broker_reconnect_req_cb</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a96f9c8176a81a486eeb7d4af15ea765f">CC_MqttsnSessionBrokerReconnectReqCb</a> cb, void *data)</td></tr>
+<tr class="memitem:a14fb2c660c6f321f061e99c66b343721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a14fb2c660c6f321f061e99c66b343721">cc_mqttsn_gw_session_set_broker_reconnect_req_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a3ca310c62397cb63f026228c14013eb7">CC_MqttsnSessionBrokerReconnectReqCb</a> cb, void *data)</td></tr>
 <tr class="memdesc:a14fb2c660c6f321f061e99c66b343721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when the <b>Session</b> needs to close existing TCP/IP connection to the broker and open a new one.  <a href="gateway__all_8h.html#a14fb2c660c6f321f061e99c66b343721">More...</a><br /></td></tr>
 <tr class="separator:a14fb2c660c6f321f061e99c66b343721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad534980071149dcd84e31174bc4f36ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ad534980071149dcd84e31174bc4f36ab">cc_mqttsn_gw_session_set_client_connect_report_cb</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#af57e2bd8487d9c42445f228d8683cb24">CC_MqttsnSessionClientConnectReportCb</a> cb, void *data)</td></tr>
+<tr class="memitem:ad534980071149dcd84e31174bc4f36ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ad534980071149dcd84e31174bc4f36ab">cc_mqttsn_gw_session_set_client_connect_report_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a6cbfce761785f6d76c168d87129feed2">CC_MqttsnSessionClientConnectReportCb</a> cb, void *data)</td></tr>
 <tr class="memdesc:ad534980071149dcd84e31174bc4f36ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when MQTT-SN client is successfully connected to the broker.  <a href="gateway__all_8h.html#ad534980071149dcd84e31174bc4f36ab">More...</a><br /></td></tr>
 <tr class="separator:ad534980071149dcd84e31174bc4f36ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f97671aaae458452921533ee58868ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a6f97671aaae458452921533ee58868ad">cc_mqttsn_gw_session_set_auth_info_req_cb</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#aa0839c2b9bcab510d7e12d087823914c">CC_MqttsnSessionAuthInfoReqCb</a> cb, void *data)</td></tr>
+<tr class="memitem:a6f97671aaae458452921533ee58868ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a6f97671aaae458452921533ee58868ad">cc_mqttsn_gw_session_set_auth_info_req_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a2501bbb485850e47b06f531ac8db87b5">CC_MqttsnSessionAuthInfoReqCb</a> cb, void *data)</td></tr>
 <tr class="memdesc:a6f97671aaae458452921533ee58868ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be used to request authentication information for specific client.  <a href="gateway__all_8h.html#a6f97671aaae458452921533ee58868ad">More...</a><br /></td></tr>
 <tr class="separator:a6f97671aaae458452921533ee58868ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab43525af01f83192fd7cb0c6297d3da3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ab43525af01f83192fd7cb0c6297d3da3">cc_mqttsn_gw_session_set_id</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, unsigned char id)</td></tr>
+<tr class="memitem:a010e04f3b13369cdd67f022f13cd0879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a010e04f3b13369cdd67f022f13cd0879">cc_mqttsn_gw_session_set_error_report_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#af504246cb110a218c41ceab98183997c">CC_MqttsnSessionErrorReportCb</a> cb, void *data)</td></tr>
+<tr class="memdesc:a010e04f3b13369cdd67f022f13cd0879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be used to report error messages detected by the session.  <a href="gateway__all_8h.html#a010e04f3b13369cdd67f022f13cd0879">More...</a><br /></td></tr>
+<tr class="separator:a010e04f3b13369cdd67f022f13cd0879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac415881691d329807c5492e9b81b84f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ac415881691d329807c5492e9b81b84f4">cc_mqttsn_gw_session_set_fwd_enc_session_created_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#a544329fe34dcd490bcf448e216102bd3">CC_MqttsnSessionFwdEncSessionCreatedCb</a> cb, void *data)</td></tr>
+<tr class="memdesc:ac415881691d329807c5492e9b81b84f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when the forwarding encapsulation session is detected and to notify application about such session creation.  <a href="gateway__all_8h.html#ac415881691d329807c5492e9b81b84f4">More...</a><br /></td></tr>
+<tr class="separator:ac415881691d329807c5492e9b81b84f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ac516ddbbf1050452e9592bac45570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a53ac516ddbbf1050452e9592bac45570">cc_mqttsn_gw_session_set_fwd_enc_session_deleted_cb</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, <a class="el" href="gateway__all_8h.html#abb974368fb839dc683a84427774e4882">CC_MqttsnSessionFwdEncSessionDeletedCb</a> cb, void *data)</td></tr>
+<tr class="memdesc:a53ac516ddbbf1050452e9592bac45570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback to be invoked when the forwarding encapsulation session is about to be deleted.  <a href="gateway__all_8h.html#a53ac516ddbbf1050452e9592bac45570">More...</a><br /></td></tr>
+<tr class="separator:a53ac516ddbbf1050452e9592bac45570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43525af01f83192fd7cb0c6297d3da3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ab43525af01f83192fd7cb0c6297d3da3">cc_mqttsn_gw_session_set_id</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, unsigned char id)</td></tr>
 <tr class="memdesc:ab43525af01f83192fd7cb0c6297d3da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set gateway numeric ID to be reported when requested.  <a href="gateway__all_8h.html#ab43525af01f83192fd7cb0c6297d3da3">More...</a><br /></td></tr>
 <tr class="separator:ab43525af01f83192fd7cb0c6297d3da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd9a851d685fcac285aa3806d1865161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#abd9a851d685fcac285aa3806d1865161">cc_mqttsn_gw_session_set_retry_period</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, unsigned value)</td></tr>
+<tr class="memitem:a47c783c426d93bda47e488cd108b32e1"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a47c783c426d93bda47e488cd108b32e1">cc_mqttsn_gw_session_get_id</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:a47c783c426d93bda47e488cd108b32e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current gateway numeric ID configuration.  <a href="gateway__all_8h.html#a47c783c426d93bda47e488cd108b32e1">More...</a><br /></td></tr>
+<tr class="separator:a47c783c426d93bda47e488cd108b32e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9a851d685fcac285aa3806d1865161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#abd9a851d685fcac285aa3806d1865161">cc_mqttsn_gw_session_set_retry_period</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, unsigned value)</td></tr>
 <tr class="memdesc:abd9a851d685fcac285aa3806d1865161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set retry period to wait between resending unacknowledged message to the client and/or broker.  <a href="gateway__all_8h.html#abd9a851d685fcac285aa3806d1865161">More...</a><br /></td></tr>
 <tr class="separator:abd9a851d685fcac285aa3806d1865161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46ae3079aeeefb1a07c688286543d62c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a46ae3079aeeefb1a07c688286543d62c">cc_mqttsn_gw_session_set_retry_count</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, unsigned value)</td></tr>
+<tr class="memitem:aa2e77ceea4b2beff035f8787a9a37e3d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aa2e77ceea4b2beff035f8787a9a37e3d">cc_mqttsn_gw_session_get_retry_period</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:aa2e77ceea4b2beff035f8787a9a37e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current configuration of the retry period.  <a href="gateway__all_8h.html#aa2e77ceea4b2beff035f8787a9a37e3d">More...</a><br /></td></tr>
+<tr class="separator:aa2e77ceea4b2beff035f8787a9a37e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ae3079aeeefb1a07c688286543d62c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a46ae3079aeeefb1a07c688286543d62c">cc_mqttsn_gw_session_set_retry_count</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, unsigned value)</td></tr>
 <tr class="memdesc:a46ae3079aeeefb1a07c688286543d62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of retry attempts to perform before abandoning attempt to send unacknowledged message.  <a href="gateway__all_8h.html#a46ae3079aeeefb1a07c688286543d62c">More...</a><br /></td></tr>
 <tr class="separator:a46ae3079aeeefb1a07c688286543d62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c4a37615011d8e08ef4cea5bdfba2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ad4c4a37615011d8e08ef4cea5bdfba2b">cc_mqttsn_gw_session_set_sleeping_client_msg_limit</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, unsigned value)</td></tr>
-<tr class="memdesc:ad4c4a37615011d8e08ef4cea5bdfba2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide limit to number pending messages being accumulated for the sleeping client.  <a href="gateway__all_8h.html#ad4c4a37615011d8e08ef4cea5bdfba2b">More...</a><br /></td></tr>
-<tr class="separator:ad4c4a37615011d8e08ef4cea5bdfba2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3bc2ab5acee7ee27bc17aa0cf98ab7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ae3bc2ab5acee7ee27bc17aa0cf98ab7f">cc_mqttsn_gw_session_set_default_client_id</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, const char *clientId)</td></tr>
+<tr class="memitem:ad77b6399c0bfdbff462020afa05a3728"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ad77b6399c0bfdbff462020afa05a3728">cc_mqttsn_gw_session_get_retry_count</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:ad77b6399c0bfdbff462020afa05a3728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current configuration of the retry count.  <a href="gateway__all_8h.html#ad77b6399c0bfdbff462020afa05a3728">More...</a><br /></td></tr>
+<tr class="separator:ad77b6399c0bfdbff462020afa05a3728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe81acfdb4d7895bc81bb0de4fc8c6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#abfe81acfdb4d7895bc81bb0de4fc8c6d">cc_mqttsn_gw_session_set_sleeping_client_msg_limit</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, unsigned long long value)</td></tr>
+<tr class="memdesc:abfe81acfdb4d7895bc81bb0de4fc8c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide limit to number pending messages being accumulated for the sleeping client.  <a href="gateway__all_8h.html#abfe81acfdb4d7895bc81bb0de4fc8c6d">More...</a><br /></td></tr>
+<tr class="separator:abfe81acfdb4d7895bc81bb0de4fc8c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1729da897d177ac7a8599f9e2b7cd246"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a1729da897d177ac7a8599f9e2b7cd246">cc_mqttsn_gw_session_get_sleeping_client_msg_limit</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:a1729da897d177ac7a8599f9e2b7cd246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get currenly configured limit to pending messages being accumulated for the sleeping client.  <a href="gateway__all_8h.html#a1729da897d177ac7a8599f9e2b7cd246">More...</a><br /></td></tr>
+<tr class="separator:a1729da897d177ac7a8599f9e2b7cd246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3bc2ab5acee7ee27bc17aa0cf98ab7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ae3bc2ab5acee7ee27bc17aa0cf98ab7f">cc_mqttsn_gw_session_set_default_client_id</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const char *clientId)</td></tr>
 <tr class="memdesc:ae3bc2ab5acee7ee27bc17aa0cf98ab7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide default client ID for clients that report empty one in their attempt to connect.  <a href="gateway__all_8h.html#ae3bc2ab5acee7ee27bc17aa0cf98ab7f">More...</a><br /></td></tr>
 <tr class="separator:ae3bc2ab5acee7ee27bc17aa0cf98ab7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec46b242b81d482ca6b71b15a0ecfc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a4ec46b242b81d482ca6b71b15a0ecfc8">cc_mqttsn_gw_session_set_pub_only_keep_alive</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, unsigned value)</td></tr>
+<tr class="memitem:a7fcb267bffcc508945e2637a3291acb8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a7fcb267bffcc508945e2637a3291acb8">cc_mqttsn_gw_session_get_default_client_id</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:a7fcb267bffcc508945e2637a3291acb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current default client ID configuration.  <a href="gateway__all_8h.html#a7fcb267bffcc508945e2637a3291acb8">More...</a><br /></td></tr>
+<tr class="separator:a7fcb267bffcc508945e2637a3291acb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec46b242b81d482ca6b71b15a0ecfc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a4ec46b242b81d482ca6b71b15a0ecfc8">cc_mqttsn_gw_session_set_pub_only_keep_alive</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, unsigned value)</td></tr>
 <tr class="memdesc:a4ec46b242b81d482ca6b71b15a0ecfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide default "keep alive" period for "publish only" clients, that do not make an attempt to connect to the gateway.  <a href="gateway__all_8h.html#a4ec46b242b81d482ca6b71b15a0ecfc8">More...</a><br /></td></tr>
 <tr class="separator:a4ec46b242b81d482ca6b71b15a0ecfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338c5ca1a6a15590ca59c4e1d909e157"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a338c5ca1a6a15590ca59c4e1d909e157">cc_mqttsn_gw_session_start</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memitem:add5e69dcad73beb03118f7da60046cdc"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#add5e69dcad73beb03118f7da60046cdc">cc_mqttsn_gw_session_get_pub_only_keep_alive</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:add5e69dcad73beb03118f7da60046cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current configuration of the default "keep alive" period for "publish only" clients.  <a href="gateway__all_8h.html#add5e69dcad73beb03118f7da60046cdc">More...</a><br /></td></tr>
+<tr class="separator:add5e69dcad73beb03118f7da60046cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338c5ca1a6a15590ca59c4e1d909e157"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a338c5ca1a6a15590ca59c4e1d909e157">cc_mqttsn_gw_session_start</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
 <tr class="memdesc:a338c5ca1a6a15590ca59c4e1d909e157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the <b>Session's</b> object's operation.  <a href="gateway__all_8h.html#a338c5ca1a6a15590ca59c4e1d909e157">More...</a><br /></td></tr>
 <tr class="separator:a338c5ca1a6a15590ca59c4e1d909e157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab986ac42e699650ca4a772574c2a0438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ab986ac42e699650ca4a772574c2a0438">cc_mqttsn_gw_session_stop</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memitem:ab986ac42e699650ca4a772574c2a0438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ab986ac42e699650ca4a772574c2a0438">cc_mqttsn_gw_session_stop</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
 <tr class="memdesc:ab986ac42e699650ca4a772574c2a0438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the operation of the <b>Session</b> object.  <a href="gateway__all_8h.html#ab986ac42e699650ca4a772574c2a0438">More...</a><br /></td></tr>
 <tr class="separator:ab986ac42e699650ca4a772574c2a0438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e128249938a69f3c858adab44e81142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a5e128249938a69f3c858adab44e81142">cc_mqttsn_gw_session_tick</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memitem:a5e128249938a69f3c858adab44e81142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a5e128249938a69f3c858adab44e81142">cc_mqttsn_gw_session_tick</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
 <tr class="memdesc:a5e128249938a69f3c858adab44e81142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the <b>Session</b> object about requested time period expiry.  <a href="gateway__all_8h.html#a5e128249938a69f3c858adab44e81142">More...</a><br /></td></tr>
 <tr class="separator:a5e128249938a69f3c858adab44e81142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd75cfcd9fc320610c1747ece2aeb83"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9cd75cfcd9fc320610c1747ece2aeb83">cc_mqttsn_gw_session_data_from_client</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, const unsigned char *buf, unsigned bufLen)</td></tr>
+<tr class="memitem:a9cd75cfcd9fc320610c1747ece2aeb83"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9cd75cfcd9fc320610c1747ece2aeb83">cc_mqttsn_gw_session_data_from_client</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const unsigned char *buf, unsigned bufLen)</td></tr>
 <tr class="memdesc:a9cd75cfcd9fc320610c1747ece2aeb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide data received from the <b>client</b> for processing.  <a href="gateway__all_8h.html#a9cd75cfcd9fc320610c1747ece2aeb83">More...</a><br /></td></tr>
 <tr class="separator:a9cd75cfcd9fc320610c1747ece2aeb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add5b16f698d0ff7af1add101f9386c56"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#add5b16f698d0ff7af1add101f9386c56">cc_mqttsn_gw_session_data_from_broker</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, const unsigned char *buf, unsigned bufLen)</td></tr>
+<tr class="memitem:add5b16f698d0ff7af1add101f9386c56"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#add5b16f698d0ff7af1add101f9386c56">cc_mqttsn_gw_session_data_from_broker</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const unsigned char *buf, unsigned bufLen)</td></tr>
 <tr class="memdesc:add5b16f698d0ff7af1add101f9386c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide data received from the <b>broker</b> for processing.  <a href="gateway__all_8h.html#add5b16f698d0ff7af1add101f9386c56">More...</a><br /></td></tr>
 <tr class="separator:add5b16f698d0ff7af1add101f9386c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde1a8b4584ce9eda7d2f136d722eddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#abde1a8b4584ce9eda7d2f136d722eddb">cc_mqttsn_gw_session_broker_connected</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, bool connected)</td></tr>
-<tr class="memdesc:abde1a8b4584ce9eda7d2f136d722eddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the <b>Session</b> object about broker being connected / disconnected.  <a href="gateway__all_8h.html#abde1a8b4584ce9eda7d2f136d722eddb">More...</a><br /></td></tr>
-<tr class="separator:abde1a8b4584ce9eda7d2f136d722eddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a065cabe188acc70ffc769372d41d8acc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a065cabe188acc70ffc769372d41d8acc">cc_mqttsn_gw_session_add_predefined_topic</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, const char *topic, unsigned short topicId)</td></tr>
+<tr class="memitem:ad91cf390da725478e498f1b5db319fcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ad91cf390da725478e498f1b5db319fcb">cc_mqttsn_gw_session_set_broker_connected</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, bool connected)</td></tr>
+<tr class="memdesc:ad91cf390da725478e498f1b5db319fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the <b>Session</b> object about broker being connected / disconnected.  <a href="gateway__all_8h.html#ad91cf390da725478e498f1b5db319fcb">More...</a><br /></td></tr>
+<tr class="separator:ad91cf390da725478e498f1b5db319fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e9c0966372dc809f8db6d8689cb3ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a20e9c0966372dc809f8db6d8689cb3ea">cc_mqttsn_gw_session_get_broker_connected</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td></tr>
+<tr class="memdesc:a20e9c0966372dc809f8db6d8689cb3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get currently recorded broker connection status.  <a href="gateway__all_8h.html#a20e9c0966372dc809f8db6d8689cb3ea">More...</a><br /></td></tr>
+<tr class="separator:a20e9c0966372dc809f8db6d8689cb3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065cabe188acc70ffc769372d41d8acc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a065cabe188acc70ffc769372d41d8acc">cc_mqttsn_gw_session_add_predefined_topic</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const char *topic, unsigned short topicId)</td></tr>
 <tr class="memdesc:a065cabe188acc70ffc769372d41d8acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add predefined topic string and ID information.  <a href="gateway__all_8h.html#a065cabe188acc70ffc769372d41d8acc">More...</a><br /></td></tr>
 <tr class="separator:a065cabe188acc70ffc769372d41d8acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afab11f43de8774d1f460fc2488e3fa4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#afab11f43de8774d1f460fc2488e3fa4b">cc_mqttsn_gw_session_set_topic_id_alloc_range</a> (<a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> session, unsigned short minTopicId, unsigned short maxTopicId)</td></tr>
+<tr class="memitem:afab11f43de8774d1f460fc2488e3fa4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#afab11f43de8774d1f460fc2488e3fa4b">cc_mqttsn_gw_session_set_topic_id_alloc_range</a> (<a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, unsigned short minTopicId, unsigned short maxTopicId)</td></tr>
 <tr class="memdesc:afab11f43de8774d1f460fc2488e3fa4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limit range of topic IDs allocated for newly registered topics.  <a href="gateway__all_8h.html#afab11f43de8774d1f460fc2488e3fa4b">More...</a><br /></td></tr>
 <tr class="separator:afab11f43de8774d1f460fc2488e3fa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30e9735a39c90ce9ad2d279e5edefc64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a30e9735a39c90ce9ad2d279e5edefc64">cc_mqttsn_gw_config_alloc</a> (void)</td></tr>
+<tr class="memitem:a30e9735a39c90ce9ad2d279e5edefc64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a30e9735a39c90ce9ad2d279e5edefc64">cc_mqttsn_gw_config_alloc</a> (void)</td></tr>
 <tr class="memdesc:a30e9735a39c90ce9ad2d279e5edefc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate <b>Config</b> object.  <a href="gateway__all_8h.html#a30e9735a39c90ce9ad2d279e5edefc64">More...</a><br /></td></tr>
 <tr class="separator:a30e9735a39c90ce9ad2d279e5edefc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09040a02e45969e577936d6a58692ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a09040a02e45969e577936d6a58692ce0">cc_mqttsn_gw_config_free</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:a09040a02e45969e577936d6a58692ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a09040a02e45969e577936d6a58692ce0">cc_mqttsn_gw_config_free</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:a09040a02e45969e577936d6a58692ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free allocated <b>Config</b> object.  <a href="gateway__all_8h.html#a09040a02e45969e577936d6a58692ce0">More...</a><br /></td></tr>
 <tr class="separator:a09040a02e45969e577936d6a58692ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a634f978feb2b7ca22fe3af51843ff9ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a634f978feb2b7ca22fe3af51843ff9ff">cc_mqttsn_gw_config_parse</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config, const char *str)</td></tr>
+<tr class="memitem:a634f978feb2b7ca22fe3af51843ff9ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a634f978feb2b7ca22fe3af51843ff9ff">cc_mqttsn_gw_config_parse</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config, const char *str)</td></tr>
 <tr class="memdesc:a634f978feb2b7ca22fe3af51843ff9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse configuration contents from string.  <a href="gateway__all_8h.html#a634f978feb2b7ca22fe3af51843ff9ff">More...</a><br /></td></tr>
 <tr class="separator:a634f978feb2b7ca22fe3af51843ff9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae942771e265c889d36060409bac3b5cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ae942771e265c889d36060409bac3b5cd">cc_mqttsn_gw_config_read</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config, const char *filename)</td></tr>
+<tr class="memitem:ae942771e265c889d36060409bac3b5cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#ae942771e265c889d36060409bac3b5cd">cc_mqttsn_gw_config_read</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config, const char *filename)</td></tr>
 <tr class="memdesc:ae942771e265c889d36060409bac3b5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration file.  <a href="gateway__all_8h.html#ae942771e265c889d36060409bac3b5cd">More...</a><br /></td></tr>
 <tr class="separator:ae942771e265c889d36060409bac3b5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc49bfebd121a1d8f6a42665460a3e1b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#acc49bfebd121a1d8f6a42665460a3e1b">cc_mqttsn_gw_config_id</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:acc49bfebd121a1d8f6a42665460a3e1b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#acc49bfebd121a1d8f6a42665460a3e1b">cc_mqttsn_gw_config_id</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:acc49bfebd121a1d8f6a42665460a3e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gateway numeric ID.  <a href="gateway__all_8h.html#acc49bfebd121a1d8f6a42665460a3e1b">More...</a><br /></td></tr>
 <tr class="separator:acc49bfebd121a1d8f6a42665460a3e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b247ef7a003577a1fac94bab300182"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a83b247ef7a003577a1fac94bab300182">cc_mqttsn_gw_config_advertise_period</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:a83b247ef7a003577a1fac94bab300182"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a83b247ef7a003577a1fac94bab300182">cc_mqttsn_gw_config_advertise_period</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:a83b247ef7a003577a1fac94bab300182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get advertise period.  <a href="gateway__all_8h.html#a83b247ef7a003577a1fac94bab300182">More...</a><br /></td></tr>
 <tr class="separator:a83b247ef7a003577a1fac94bab300182"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da304a8e8983aa53668ee1e1e466b1a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a5da304a8e8983aa53668ee1e1e466b1a">cc_mqttsn_gw_config_retry_period</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:a5da304a8e8983aa53668ee1e1e466b1a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a5da304a8e8983aa53668ee1e1e466b1a">cc_mqttsn_gw_config_retry_period</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:a5da304a8e8983aa53668ee1e1e466b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get retry period.  <a href="gateway__all_8h.html#a5da304a8e8983aa53668ee1e1e466b1a">More...</a><br /></td></tr>
 <tr class="separator:a5da304a8e8983aa53668ee1e1e466b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0016de2e726c9cb0cd6c549d5ccf7688"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a0016de2e726c9cb0cd6c549d5ccf7688">cc_mqttsn_gw_config_retry_count</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:a0016de2e726c9cb0cd6c549d5ccf7688"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a0016de2e726c9cb0cd6c549d5ccf7688">cc_mqttsn_gw_config_retry_count</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:a0016de2e726c9cb0cd6c549d5ccf7688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of retry attempts.  <a href="gateway__all_8h.html#a0016de2e726c9cb0cd6c549d5ccf7688">More...</a><br /></td></tr>
 <tr class="separator:a0016de2e726c9cb0cd6c549d5ccf7688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a307a7ff583fd5e2673a53bb0ba253255"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a307a7ff583fd5e2673a53bb0ba253255">cc_mqttsn_gw_config_default_client_id</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:a307a7ff583fd5e2673a53bb0ba253255"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a307a7ff583fd5e2673a53bb0ba253255">cc_mqttsn_gw_config_default_client_id</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:a307a7ff583fd5e2673a53bb0ba253255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default client ID.  <a href="gateway__all_8h.html#a307a7ff583fd5e2673a53bb0ba253255">More...</a><br /></td></tr>
 <tr class="separator:a307a7ff583fd5e2673a53bb0ba253255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2275954f874452763ec2bbcd345ee2fd"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a2275954f874452763ec2bbcd345ee2fd">cc_mqttsn_gw_config_pub_only_keep_alive</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:a2275954f874452763ec2bbcd345ee2fd"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a2275954f874452763ec2bbcd345ee2fd">cc_mqttsn_gw_config_pub_only_keep_alive</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:a2275954f874452763ec2bbcd345ee2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get keep alive period for publish only clients.  <a href="gateway__all_8h.html#a2275954f874452763ec2bbcd345ee2fd">More...</a><br /></td></tr>
 <tr class="separator:a2275954f874452763ec2bbcd345ee2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac9e3f5e73bd620c6389df77aeb41cae"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aac9e3f5e73bd620c6389df77aeb41cae">cc_mqttsn_gw_config_sleeping_client_msg_limit</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:aac9e3f5e73bd620c6389df77aeb41cae"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aac9e3f5e73bd620c6389df77aeb41cae">cc_mqttsn_gw_config_sleeping_client_msg_limit</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:aac9e3f5e73bd620c6389df77aeb41cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get limit for max number of messages to accumulate for sleeping clients.  <a href="gateway__all_8h.html#aac9e3f5e73bd620c6389df77aeb41cae">More...</a><br /></td></tr>
 <tr class="separator:aac9e3f5e73bd620c6389df77aeb41cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af37cf7cb8dfe7575ce672fcb0035e882"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#af37cf7cb8dfe7575ce672fcb0035e882">cc_mqttsn_gw_config_available_predefined_topics</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:af37cf7cb8dfe7575ce672fcb0035e882"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#af37cf7cb8dfe7575ce672fcb0035e882">cc_mqttsn_gw_config_available_predefined_topics</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:af37cf7cb8dfe7575ce672fcb0035e882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of available predefined topic IDs.  <a href="gateway__all_8h.html#af37cf7cb8dfe7575ce672fcb0035e882">More...</a><br /></td></tr>
 <tr class="separator:af37cf7cb8dfe7575ce672fcb0035e882"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874db716cf8499e03404e90d6f938e9d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a874db716cf8499e03404e90d6f938e9d">cc_mqttsn_gw_config_get_predefined_topics</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config, <a class="el" href="structCC__MqttsnPredefinedTopicInfo.html">CC_MqttsnPredefinedTopicInfo</a> *buf, unsigned bufLen)</td></tr>
+<tr class="memitem:a874db716cf8499e03404e90d6f938e9d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a874db716cf8499e03404e90d6f938e9d">cc_mqttsn_gw_config_get_predefined_topics</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config, <a class="el" href="structCC__MqttsnPredefinedTopicInfo.html">CC_MqttsnPredefinedTopicInfo</a> *buf, unsigned bufLen)</td></tr>
 <tr class="memdesc:a874db716cf8499e03404e90d6f938e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read information about available topic IDs into a buffer.  <a href="gateway__all_8h.html#a874db716cf8499e03404e90d6f938e9d">More...</a><br /></td></tr>
 <tr class="separator:a874db716cf8499e03404e90d6f938e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0241f3f1598e8213aa08f0819705f36"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#af0241f3f1598e8213aa08f0819705f36">cc_mqttsn_gw_config_available_auth_infos</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:af0241f3f1598e8213aa08f0819705f36"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#af0241f3f1598e8213aa08f0819705f36">cc_mqttsn_gw_config_available_auth_infos</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:af0241f3f1598e8213aa08f0819705f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of available authenticatin infos for all the clients.  <a href="gateway__all_8h.html#af0241f3f1598e8213aa08f0819705f36">More...</a><br /></td></tr>
 <tr class="separator:af0241f3f1598e8213aa08f0819705f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a467e62a020e838db74884f98d707f2"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a6a467e62a020e838db74884f98d707f2">cc_mqttsn_gw_config_get_auth_infos</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config, <a class="el" href="structCC__MqttsnAuthInfo.html">CC_MqttsnAuthInfo</a> *buf, unsigned bufLen)</td></tr>
+<tr class="memitem:a6a467e62a020e838db74884f98d707f2"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a6a467e62a020e838db74884f98d707f2">cc_mqttsn_gw_config_get_auth_infos</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config, <a class="el" href="structCC__MqttsnAuthInfo.html">CC_MqttsnAuthInfo</a> *buf, unsigned bufLen)</td></tr>
 <tr class="memdesc:a6a467e62a020e838db74884f98d707f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read clients' authentication information into a buffer.  <a href="gateway__all_8h.html#a6a467e62a020e838db74884f98d707f2">More...</a><br /></td></tr>
 <tr class="separator:a6a467e62a020e838db74884f98d707f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb95bc354adf02703544e26f96d3bcc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aeb95bc354adf02703544e26f96d3bcc7">cc_mqttsn_gw_config_topic_id_alloc_range</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config, unsigned short *min, unsigned short *max)</td></tr>
+<tr class="memitem:aeb95bc354adf02703544e26f96d3bcc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#aeb95bc354adf02703544e26f96d3bcc7">cc_mqttsn_gw_config_topic_id_alloc_range</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config, unsigned short *min, unsigned short *max)</td></tr>
 <tr class="memdesc:aeb95bc354adf02703544e26f96d3bcc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get range of allowed topic IDs for allocation.  <a href="gateway__all_8h.html#aeb95bc354adf02703544e26f96d3bcc7">More...</a><br /></td></tr>
 <tr class="separator:aeb95bc354adf02703544e26f96d3bcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388feb43456b21e988d7f3e587b5c516"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a388feb43456b21e988d7f3e587b5c516">cc_mqttsn_gw_config_broker_address</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:a388feb43456b21e988d7f3e587b5c516"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a388feb43456b21e988d7f3e587b5c516">cc_mqttsn_gw_config_broker_address</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:a388feb43456b21e988d7f3e587b5c516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get TCP/IP address of the broker.  <a href="gateway__all_8h.html#a388feb43456b21e988d7f3e587b5c516">More...</a><br /></td></tr>
 <tr class="separator:a388feb43456b21e988d7f3e587b5c516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52604b98bac8782f7b901de08a559113"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a52604b98bac8782f7b901de08a559113">cc_mqttsn_gw_config_broker_port</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memitem:a52604b98bac8782f7b901de08a559113"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a52604b98bac8782f7b901de08a559113">cc_mqttsn_gw_config_broker_port</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
 <tr class="memdesc:a52604b98bac8782f7b901de08a559113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get TCP/IP port of the broker.  <a href="gateway__all_8h.html#a52604b98bac8782f7b901de08a559113">More...</a><br /></td></tr>
 <tr class="separator:a52604b98bac8782f7b901de08a559113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd0cb2f3607b3b1e82136baad12ddb1"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a2bd0cb2f3607b3b1e82136baad12ddb1">cc_mqttsn_gw_config_values_count</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config, const char *key)</td></tr>
+<tr class="memitem:a9cb4f84b328a2bdccf6525654493fdc9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a9cb4f84b328a2bdccf6525654493fdc9">cc_mqttsn_gw_config_log_file</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memdesc:a9cb4f84b328a2bdccf6525654493fdc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get log file.  <a href="gateway__all_8h.html#a9cb4f84b328a2bdccf6525654493fdc9">More...</a><br /></td></tr>
+<tr class="separator:a9cb4f84b328a2bdccf6525654493fdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad5992d18da51df9c95dd8d5c7c5c91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gateway__all_8h.html#a9dc62489f926bed4e7116b79fe1bc51f">CC_MqttsnClientConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a5ad5992d18da51df9c95dd8d5c7c5c91">cc_mqttsn_gw_config_client_connection_type</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memdesc:a5ad5992d18da51df9c95dd8d5c7c5c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client I/O socket connection type.  <a href="gateway__all_8h.html#a5ad5992d18da51df9c95dd8d5c7c5c91">More...</a><br /></td></tr>
+<tr class="separator:a5ad5992d18da51df9c95dd8d5c7c5c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6620432f351d7d109538e4323ade62b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gateway__all_8h.html#a2de0a1cc46b4fdd12a66e38b7397145f">CC_MqttsnBrokerConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#af6620432f351d7d109538e4323ade62b">cc_mqttsn_gw_config_broker_connection_type</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config)</td></tr>
+<tr class="memdesc:af6620432f351d7d109538e4323ade62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get broker I/O socket connection type.  <a href="gateway__all_8h.html#af6620432f351d7d109538e4323ade62b">More...</a><br /></td></tr>
+<tr class="separator:af6620432f351d7d109538e4323ade62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd0cb2f3607b3b1e82136baad12ddb1"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#a2bd0cb2f3607b3b1e82136baad12ddb1">cc_mqttsn_gw_config_values_count</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config, const char *key)</td></tr>
 <tr class="memdesc:a2bd0cb2f3607b3b1e82136baad12ddb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of available configuration values for the provided key.  <a href="gateway__all_8h.html#a2bd0cb2f3607b3b1e82136baad12ddb1">More...</a><br /></td></tr>
 <tr class="separator:a2bd0cb2f3607b3b1e82136baad12ddb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdc375f41461277b451a07e623ffa68f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#abdc375f41461277b451a07e623ffa68f">cc_mqttsn_gw_config_get_value</a> (<a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> config, const char *key, unsigned idx)</td></tr>
+<tr class="memitem:abdc375f41461277b451a07e623ffa68f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gateway__all_8h.html#abdc375f41461277b451a07e623ffa68f">cc_mqttsn_gw_config_get_value</a> (<a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> config, const char *key, unsigned idx)</td></tr>
 <tr class="memdesc:abdc375f41461277b451a07e623ffa68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the available value for the configuration key.  <a href="gateway__all_8h.html#abdc375f41461277b451a07e623ffa68f">More...</a><br /></td></tr>
 <tr class="separator:abdc375f41461277b451a07e623ffa68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -341,14 +415,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa0839c2b9bcab510d7e12d087823914c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0839c2b9bcab510d7e12d087823914c">&#9670;&nbsp;</a></span>CC_MqttsnSessionAuthInfoReqCb</h2>
+<a id="a2501bbb485850e47b06f531ac8db87b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2501bbb485850e47b06f531ac8db87b5">&#9670;&nbsp;</a></span>CC_MqttsnSessionAuthInfoReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* CC_MqttsnSessionAuthInfoReqCb) (void *userData, const char *clientId, const char **username, const unsigned char **password, unsigned *passwordLen)</td>
+          <td class="memname">typedef void(* CC_MqttsnSessionAuthInfoReqCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const char *clientId, const char **username, const unsigned char **password, unsigned *passwordLen)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -357,6 +431,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the request </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">clientId</td><td>Client ID </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">username</td><td>Username string </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">password</td><td>Binary password buffer </td></tr>
@@ -367,14 +442,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a96f9c8176a81a486eeb7d4af15ea765f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96f9c8176a81a486eeb7d4af15ea765f">&#9670;&nbsp;</a></span>CC_MqttsnSessionBrokerReconnectReqCb</h2>
+<a id="a3ca310c62397cb63f026228c14013eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca310c62397cb63f026228c14013eb7">&#9670;&nbsp;</a></span>CC_MqttsnSessionBrokerReconnectReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* CC_MqttsnSessionBrokerReconnectReqCb) (void *userData)</td>
+          <td class="memname">typedef void(* CC_MqttsnSessionBrokerReconnectReqCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -383,74 +458,30 @@ Functions</h2></td></tr>
 <p>When the callback is invoked, the driving code must close existing TCP/IP connection to the broker and create a new one. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the request </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aec73e5615a45b2d8f882bd675ccaa28b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec73e5615a45b2d8f882bd675ccaa28b">&#9670;&nbsp;</a></span>CC_MqttsnSessionCancelTickReqCb</h2>
+<a id="a00200a85402d301e9d3aa525569aab2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00200a85402d301e9d3aa525569aab2b">&#9670;&nbsp;</a></span>CC_MqttsnSessionBrokerSendDataReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef unsigned(* CC_MqttsnSessionCancelTickReqCb) (void *userData)</td>
+          <td class="memname">typedef void(* CC_MqttsnSessionBrokerSendDataReqCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const unsigned char *buf, unsigned bufLen)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Type of callback, used to cancel existing time measurement. </p>
-<p>When invoked the existing time measurement needs to be cancelled. The function also needs to return amount of <b>milliseconds</b> elapsed since last timer programming request. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of elapsed <b>milliseconds</b> since last timer programming request. </dd></dl>
-
-</div>
-</div>
-<a id="af57e2bd8487d9c42445f228d8683cb24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af57e2bd8487d9c42445f228d8683cb24">&#9670;&nbsp;</a></span>CC_MqttsnSessionClientConnectReportCb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* CC_MqttsnSessionClientConnectReportCb) (void *userData, const char *clientId)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type of callback used to report client ID of the newly connected MQTT-SN client. </p>
-<p>The callback can be used to provide additional client specific information, such as predefined topic IDs. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">clientId</td><td>Client ID </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aea5624515961a47a371a30790c7d7757"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea5624515961a47a371a30790c7d7757">&#9670;&nbsp;</a></span>CC_MqttsnSessionSendDataReqCb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* CC_MqttsnSessionSendDataReqCb) (void *userData, const unsigned char *buf, unsigned bufLen)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type of callback, used to request delivery of serialised message to the client or broker. </p>
+<p>Type of callback, used to request delivery of serialised message to the broker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the request </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer containing serialised message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bufLen</td><td>Number of bytes in the buffer </td></tr>
   </table>
@@ -459,14 +490,159 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a433a688b80306081d23971fac5f01220"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a433a688b80306081d23971fac5f01220">&#9670;&nbsp;</a></span>CC_MqttsnSessionTermReqCb</h2>
+<a id="ad8242c3e0705e1b220ea69f966e5709c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8242c3e0705e1b220ea69f966e5709c">&#9670;&nbsp;</a></span>CC_MqttsnSessionCancelTickReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* CC_MqttsnSessionTermReqCb) (void *userData)</td>
+          <td class="memname">typedef unsigned(* CC_MqttsnSessionCancelTickReqCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback, used to cancel existing time measurement. </p>
+<p>When invoked the existing time measurement needs to be cancelled. The function also needs to return amount of <b>milliseconds</b> elapsed since last timer programming request. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the request </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of elapsed <b>milliseconds</b> since last timer programming request. </dd></dl>
+
+</div>
+</div>
+<a id="a6cbfce761785f6d76c168d87129feed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbfce761785f6d76c168d87129feed2">&#9670;&nbsp;</a></span>CC_MqttsnSessionClientConnectReportCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* CC_MqttsnSessionClientConnectReportCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const char *clientId)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback used to report client ID of the newly connected MQTT-SN client. </p>
+<p>The callback can be used to provide additional client specific information, such as predefined topic IDs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the report </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clientId</td><td>Client ID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a336b91dda9d64582a23024fcf63e8baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a336b91dda9d64582a23024fcf63e8baa">&#9670;&nbsp;</a></span>CC_MqttsnSessionClientSendDataReqCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* CC_MqttsnSessionClientSendDataReqCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const unsigned char *buf, unsigned bufLen, unsigned broadcastRadius)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback, used to request delivery of serialised message to the client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer containing serialised message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bufLen</td><td>Number of bytes in the buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">broadcastRadius</td><td>Broadcast radius. 0 means unicast. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af504246cb110a218c41ceab98183997c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af504246cb110a218c41ceab98183997c">&#9670;&nbsp;</a></span>CC_MqttsnSessionErrorReportCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* CC_MqttsnSessionErrorReportCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, const char *msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback used to report error messages detected by the session. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>Error message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a544329fe34dcd490bcf448e216102bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544329fe34dcd490bcf448e216102bd3">&#9670;&nbsp;</a></span>CC_MqttsnSessionFwdEncSessionCreatedCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* CC_MqttsnSessionFwdEncSessionCreatedCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback used to report forwarding encapsulated session creation. </p>
+<p>The application is responsible to perform the necessary session configuration as well as set all the callbacks except the one set by the <a class="el" href="gateway__all_8h.html#ac360b1fc3f387ba822c0017a061b79dd">cc_mqttsn_gw_session_set_send_data_to_client_cb()</a> and <a class="el" href="gateway__all_8h.html#a89e01f95470aefe80752c495d7b45268">cc_mqttsn_gw_session_set_term_req_cb()</a>. The data sent to the client as well as the session termination are managed by the calling session object. The application is responsible to manage the timer as well as broker connection of the reported session. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of created session object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b>true</b> in case of success, <b>false</b> in case of falure. </dd></dl>
+
+</div>
+</div>
+<a id="abb974368fb839dc683a84427774e4882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb974368fb839dc683a84427774e4882">&#9670;&nbsp;</a></span>CC_MqttsnSessionFwdEncSessionDeletedCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* CC_MqttsnSessionFwdEncSessionDeletedCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of callback used to report forwarding encapsulated session about to be deleted. </p>
+<p>The application is responsible to remove any reference to the session object from its internal data structes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session object about to be deleted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91a186cc987ef6aba073d83ae7acc058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a186cc987ef6aba073d83ae7acc058">&#9670;&nbsp;</a></span>CC_MqttsnSessionTermReqCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* CC_MqttsnSessionTermReqCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -475,20 +651,21 @@ Functions</h2></td></tr>
 <p>When the callback is invoked, the driving code must flush all the previously sent messages to appropriate I/O links and delete this session object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the request </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a4a28b9a3d11fe5dab0a39a66aabc31be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a28b9a3d11fe5dab0a39a66aabc31be">&#9670;&nbsp;</a></span>CC_MqttsnSessionTickReqCb</h2>
+<a id="a7c0481e1b510d1f190a57e80513f66d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0481e1b510d1f190a57e80513f66d2">&#9670;&nbsp;</a></span>CC_MqttsnSessionTickReqCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* CC_MqttsnSessionTickReqCb) (void *userData, unsigned duration)</td>
+          <td class="memname">typedef void(* CC_MqttsnSessionTickReqCb) (void *userData, <a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> session, unsigned duration)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -497,10 +674,56 @@ Functions</h2></td></tr>
 <p>When the requested time is due, the driving code is expected to call <a class="el" href="gateway__all_8h.html#a5e128249938a69f3c858adab44e81142" title="Notify the Session object about requested time period expiry.">cc_mqttsn_gw_session_tick()</a> member function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>User data passed as the last parameter to the setting function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle of session performing the request </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">duration</td><td>Number of <b>milliseconds</b> to measure. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a2de0a1cc46b4fdd12a66e38b7397145f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de0a1cc46b4fdd12a66e38b7397145f">&#9670;&nbsp;</a></span>CC_MqttsnBrokerConnectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="gateway__all_8h.html#a2de0a1cc46b4fdd12a66e38b7397145f">CC_MqttsnBrokerConnectionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Broker I/O socket connection type. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2de0a1cc46b4fdd12a66e38b7397145fa798ef08d5cff599eb900c5ea1c1d6e74"></a>CC_MqttsnBrokerConnectionType_Tcp&#160;</td><td class="fielddoc"><p>TCP/IP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2de0a1cc46b4fdd12a66e38b7397145fa03f65faf69d73f10855b98ebdc559312"></a>CC_MqttsnBrokerConnectionType_ValuesLimit&#160;</td><td class="fielddoc"><p>Limit to available values, must be last. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9dc62489f926bed4e7116b79fe1bc51f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc62489f926bed4e7116b79fe1bc51f">&#9670;&nbsp;</a></span>CC_MqttsnClientConnectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="gateway__all_8h.html#a9dc62489f926bed4e7116b79fe1bc51f">CC_MqttsnClientConnectionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Client I/O socket connection type. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9dc62489f926bed4e7116b79fe1bc51faf9f25f717ade3e8fbc696981965ad3a0"></a>CC_MqttsnClientConnectionType_Udp&#160;</td><td class="fielddoc"><p>UDP/IP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc62489f926bed4e7116b79fe1bc51fa10dbac4a53ed2d8bd361889fcaaccb06"></a>CC_MqttsnClientConnectionType_ValuesLimit&#160;</td><td class="fielddoc"><p>Limit to available values, must be last. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -512,7 +735,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a> cc_mqttsn_gw_alloc </td>
+          <td class="memname"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a> cc_mqttsn_gw_alloc </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -535,7 +758,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned short cc_mqttsn_gw_config_advertise_period </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -560,7 +783,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a> cc_mqttsn_gw_config_alloc </td>
+          <td class="memname"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a> cc_mqttsn_gw_config_alloc </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -583,7 +806,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_available_auth_infos </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -609,7 +832,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_available_predefined_topics </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -635,7 +858,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char* cc_mqttsn_gw_config_broker_address </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -652,6 +875,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af6620432f351d7d109538e4323ade62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6620432f351d7d109538e4323ade62b">&#9670;&nbsp;</a></span>cc_mqttsn_gw_config_broker_connection_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="gateway__all_8h.html#a2de0a1cc46b4fdd12a66e38b7397145f">CC_MqttsnBrokerConnectionType</a> cc_mqttsn_gw_config_broker_connection_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get broker I/O socket connection type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a30e9735a39c90ce9ad2d279e5edefc64" title="Allocate Config object.">cc_mqttsn_gw_config_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a52604b98bac8782f7b901de08a559113"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52604b98bac8782f7b901de08a559113">&#9670;&nbsp;</a></span>cc_mqttsn_gw_config_broker_port()</h2>
 
@@ -661,7 +910,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned short cc_mqttsn_gw_config_broker_port </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -678,6 +927,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5ad5992d18da51df9c95dd8d5c7c5c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad5992d18da51df9c95dd8d5c7c5c91">&#9670;&nbsp;</a></span>cc_mqttsn_gw_config_client_connection_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="gateway__all_8h.html#a9dc62489f926bed4e7116b79fe1bc51f">CC_MqttsnClientConnectionType</a> cc_mqttsn_gw_config_client_connection_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get client I/O socket connection type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a30e9735a39c90ce9ad2d279e5edefc64" title="Allocate Config object.">cc_mqttsn_gw_config_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a307a7ff583fd5e2673a53bb0ba253255"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a307a7ff583fd5e2673a53bb0ba253255">&#9670;&nbsp;</a></span>cc_mqttsn_gw_config_default_client_id()</h2>
 
@@ -687,7 +962,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char* cc_mqttsn_gw_config_default_client_id </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -714,7 +989,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_config_free </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -740,7 +1015,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_get_auth_infos </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
@@ -785,7 +1060,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_get_predefined_topics </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
@@ -830,7 +1105,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char* cc_mqttsn_gw_config_get_value </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
@@ -867,7 +1142,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned char cc_mqttsn_gw_config_id </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -885,6 +1160,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9cb4f84b328a2bdccf6525654493fdc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb4f84b328a2bdccf6525654493fdc9">&#9670;&nbsp;</a></span>cc_mqttsn_gw_config_log_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* cc_mqttsn_gw_config_log_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get log file. </p>
+<p>Expected to be an aboslute file path or one of the special values: "stdout", "stderr". Defaults to "stdout" </p>
+
+</div>
+</div>
 <a id="a634f978feb2b7ca22fe3af51843ff9ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a634f978feb2b7ca22fe3af51843ff9ff">&#9670;&nbsp;</a></span>cc_mqttsn_gw_config_parse()</h2>
 
@@ -894,7 +1190,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_config_parse </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
@@ -931,7 +1227,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_pub_only_keep_alive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -958,7 +1254,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool cc_mqttsn_gw_config_read </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
@@ -995,7 +1291,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_retry_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1022,7 +1318,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_retry_period </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1049,7 +1345,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_sleeping_client_msg_limit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1076,7 +1372,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_config_topic_id_alloc_range </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
@@ -1120,7 +1416,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_config_values_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnConfigHandle.html">CC_MqttsnConfigHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a10d84c0578da337c659977b26287bd39">CC_MqttsnConfigHandle</a>&#160;</td>
           <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
@@ -1157,7 +1453,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_free </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
           <td class="paramname"><em>gw</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1165,6 +1461,58 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Free allocated <b>Gateway</b> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gw</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#aa2706de700b42390c05d51f30e74eb75" title="Allocate Gateway object.">cc_mqttsn_gw_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac3ddca1373a061676983b97150ab9c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ddca1373a061676983b97150ab9c38">&#9670;&nbsp;</a></span>cc_mqttsn_gw_get_advertise_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short cc_mqttsn_gw_get_advertise_period </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramname"><em>gw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current configuration of the advertise period. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gw</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#aa2706de700b42390c05d51f30e74eb75" title="Allocate Gateway object.">cc_mqttsn_gw_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac567d1d09dc881c3dc8bd2464e0b3820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac567d1d09dc881c3dc8bd2464e0b3820">&#9670;&nbsp;</a></span>cc_mqttsn_gw_get_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char cc_mqttsn_gw_get_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramname"><em>gw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current configuration of the numeric gateway id. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">gw</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#aa2706de700b42390c05d51f30e74eb75" title="Allocate Gateway object.">cc_mqttsn_gw_alloc()</a> function. </td></tr>
@@ -1183,7 +1531,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool cc_mqttsn_gw_session_add_predefined_topic </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -1226,7 +1574,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a> cc_mqttsn_gw_session_alloc </td>
+          <td class="memname"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> cc_mqttsn_gw_session_alloc </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1240,43 +1588,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abde1a8b4584ce9eda7d2f136d722eddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abde1a8b4584ce9eda7d2f136d722eddb">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_broker_connected()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cc_mqttsn_gw_session_broker_connected </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
-          <td class="paramname"><em>session</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>connected</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Notify the <b>Session</b> object about broker being connected / disconnected. </p>
-<p>The report of broker being connected or disconnected must be performed only when the session's operation has been successfully started (see <a class="el" href="gateway__all_8h.html#a338c5ca1a6a15590ca59c4e1d909e157" title="Start the Session&#39;s object&#39;s operation.">cc_mqttsn_gw_session_start()</a>). Otherwise the call to this function gets ignored. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">connected</td><td>Connection status - <b>true</b> means connected, <b>false</b> disconnected. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="add5b16f698d0ff7af1add101f9386c56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add5b16f698d0ff7af1add101f9386c56">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_data_from_broker()</h2>
 
@@ -1286,7 +1597,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_session_data_from_broker </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -1332,7 +1643,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqttsn_gw_session_data_from_client </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -1378,7 +1689,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_free </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1386,6 +1697,188 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Free allocated <b>Session</b> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20e9c0966372dc809f8db6d8689cb3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e9c0966372dc809f8db6d8689cb3ea">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_get_broker_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cc_mqttsn_gw_session_get_broker_connected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get currently recorded broker connection status. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7fcb267bffcc508945e2637a3291acb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcb267bffcc508945e2637a3291acb8">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_get_default_client_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* cc_mqttsn_gw_session_get_default_client_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current default client ID configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47c783c426d93bda47e488cd108b32e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c783c426d93bda47e488cd108b32e1">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_get_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char cc_mqttsn_gw_session_get_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current gateway numeric ID configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add5e69dcad73beb03118f7da60046cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5e69dcad73beb03118f7da60046cdc">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_get_pub_only_keep_alive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned cc_mqttsn_gw_session_get_pub_only_keep_alive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current configuration of the default "keep alive" period for "publish only" clients. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad77b6399c0bfdbff462020afa05a3728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77b6399c0bfdbff462020afa05a3728">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_get_retry_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned cc_mqttsn_gw_session_get_retry_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current configuration of the retry count. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2e77ceea4b2beff035f8787a9a37e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e77ceea4b2beff035f8787a9a37e3d">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_get_retry_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned cc_mqttsn_gw_session_get_retry_period </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current configuration of the retry period. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1729da897d177ac7a8599f9e2b7cd246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1729da897d177ac7a8599f9e2b7cd246">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_get_sleeping_client_msg_limit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long cc_mqttsn_gw_session_get_sleeping_client_msg_limit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get currenly configured limit to pending messages being accumulated for the sleeping client. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
@@ -1404,13 +1897,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_auth_info_req_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="gateway__all_8h.html#aa0839c2b9bcab510d7e12d087823914c">CC_MqttsnSessionAuthInfoReqCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a2501bbb485850e47b06f531ac8db87b5">CC_MqttsnSessionAuthInfoReqCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -1439,6 +1932,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad91cf390da725478e498f1b5db319fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91cf390da725478e498f1b5db319fcb">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_broker_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_mqttsn_gw_session_set_broker_connected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>connected</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify the <b>Session</b> object about broker being connected / disconnected. </p>
+<p>The report of broker being connected or disconnected must be performed only when the session's operation has been successfully started (see <a class="el" href="gateway__all_8h.html#a338c5ca1a6a15590ca59c4e1d909e157" title="Start the Session&#39;s object&#39;s operation.">cc_mqttsn_gw_session_start()</a>). Otherwise the call to this function gets ignored. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">connected</td><td>Connection status - <b>true</b> means connected, <b>false</b> disconnected. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a14fb2c660c6f321f061e99c66b343721"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14fb2c660c6f321f061e99c66b343721">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_broker_reconnect_req_cb()</h2>
 
@@ -1448,13 +1978,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_broker_reconnect_req_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a96f9c8176a81a486eeb7d4af15ea765f">CC_MqttsnSessionBrokerReconnectReqCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a3ca310c62397cb63f026228c14013eb7">CC_MqttsnSessionBrokerReconnectReqCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -1492,13 +2022,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_cancel_tick_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="gateway__all_8h.html#aec73e5615a45b2d8f882bd675ccaa28b">CC_MqttsnSessionCancelTickReqCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#ad8242c3e0705e1b220ea69f966e5709c">CC_MqttsnSessionCancelTickReqCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -1536,13 +2066,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_client_connect_report_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="gateway__all_8h.html#af57e2bd8487d9c42445f228d8683cb24">CC_MqttsnSessionClientConnectReportCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a6cbfce761785f6d76c168d87129feed2">CC_MqttsnSessionClientConnectReportCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -1580,7 +2110,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_default_client_id </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -1608,6 +2138,138 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a010e04f3b13369cdd67f022f13cd0879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a010e04f3b13369cdd67f022f13cd0879">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_error_report_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_mqttsn_gw_session_set_error_report_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#af504246cb110a218c41ceab98183997c">CC_MqttsnSessionErrorReportCb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the callback to be used to report error messages detected by the session. </p>
+<p>This is an optional callback. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Pointer to callback function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to any user data, will be passed back as first parameter to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac415881691d329807c5492e9b81b84f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac415881691d329807c5492e9b81b84f4">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_fwd_enc_session_created_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_mqttsn_gw_session_set_fwd_enc_session_created_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a544329fe34dcd490bcf448e216102bd3">CC_MqttsnSessionFwdEncSessionCreatedCb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the callback to be invoked when the forwarding encapsulation session is detected and to notify application about such session creation. </p>
+<p>When not set, the forwarding enapsulation messages will be ignored </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Pointer to callback function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to any user data, will be passed back as first parameter to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53ac516ddbbf1050452e9592bac45570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ac516ddbbf1050452e9592bac45570">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_fwd_enc_session_deleted_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_mqttsn_gw_session_set_fwd_enc_session_deleted_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#abb974368fb839dc683a84427774e4882">CC_MqttsnSessionFwdEncSessionDeletedCb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the callback to be invoked when the forwarding encapsulation session is about to be deleted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Handle returned by <a class="el" href="gateway__all_8h.html#a5c78e0c26c7400fa6508f6f51522f144" title="Allocate Session object.">cc_mqttsn_gw_session_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Pointer to callback function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to any user data, will be passed back as first parameter to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab43525af01f83192fd7cb0c6297d3da3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab43525af01f83192fd7cb0c6297d3da3">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_id()</h2>
 
@@ -1617,7 +2279,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_id </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -1654,7 +2316,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_pub_only_keep_alive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -1679,6 +2341,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section pre"><dt>Precondition</dt><dd>The provided value mustn't exceed 65535. </dd></dl>
 
 </div>
 </div>
@@ -1691,7 +2354,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_retry_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -1728,7 +2391,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_retry_period </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -1756,8 +2419,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a01677e8c4af48a65450e1177de10a039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01677e8c4af48a65450e1177de10a039">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_send_data_to_broker_cb()</h2>
+<a id="a25285e430dfe8e094448a6f97497191f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25285e430dfe8e094448a6f97497191f">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_send_data_to_broker_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1765,13 +2428,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_send_data_to_broker_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="gateway__all_8h.html#aea5624515961a47a371a30790c7d7757">CC_MqttsnSessionSendDataReqCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a00200a85402d301e9d3aa525569aab2b">CC_MqttsnSessionBrokerSendDataReqCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -1800,8 +2463,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa21ea0c1cb9dff11dd5ef85aee76b0bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa21ea0c1cb9dff11dd5ef85aee76b0bc">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_send_data_to_client_cb()</h2>
+<a id="ac360b1fc3f387ba822c0017a061b79dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac360b1fc3f387ba822c0017a061b79dd">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_send_data_to_client_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1809,13 +2472,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_send_data_to_client_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="gateway__all_8h.html#aea5624515961a47a371a30790c7d7757">CC_MqttsnSessionSendDataReqCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a336b91dda9d64582a23024fcf63e8baa">CC_MqttsnSessionClientSendDataReqCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -1844,8 +2507,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4c4a37615011d8e08ef4cea5bdfba2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4c4a37615011d8e08ef4cea5bdfba2b">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_sleeping_client_msg_limit()</h2>
+<a id="abfe81acfdb4d7895bc81bb0de4fc8c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe81acfdb4d7895bc81bb0de4fc8c6d">&#9670;&nbsp;</a></span>cc_mqttsn_gw_session_set_sleeping_client_msg_limit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1853,13 +2516,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_sleeping_client_msg_limit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">unsigned long long&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -1890,13 +2553,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_term_req_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a433a688b80306081d23971fac5f01220">CC_MqttsnSessionTermReqCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a91a186cc987ef6aba073d83ae7acc058">CC_MqttsnSessionTermReqCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -1934,13 +2597,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_set_tick_req_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a4a28b9a3d11fe5dab0a39a66aabc31be">CC_MqttsnSessionTickReqCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a7c0481e1b510d1f190a57e80513f66d2">CC_MqttsnSessionTickReqCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -1978,7 +2641,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool cc_mqttsn_gw_session_set_topic_id_alloc_range </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em>, </td>
         </tr>
         <tr>
@@ -2023,7 +2686,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool cc_mqttsn_gw_session_start </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2050,7 +2713,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_stop </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2076,7 +2739,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_session_tick </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnSessionHandle.html">CC_MqttsnSessionHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a>&#160;</td>
           <td class="paramname"><em>session</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2102,7 +2765,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_set_advertise_broadcast_req_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
           <td class="paramname"><em>gw</em>, </td>
         </tr>
         <tr>
@@ -2146,7 +2809,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_set_advertise_period </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
           <td class="paramname"><em>gw</em>, </td>
         </tr>
         <tr>
@@ -2183,7 +2846,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_set_id </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
           <td class="paramname"><em>gw</em>, </td>
         </tr>
         <tr>
@@ -2220,7 +2883,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_set_tick_req_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
           <td class="paramname"><em>gw</em>, </td>
         </tr>
         <tr>
@@ -2264,7 +2927,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool cc_mqttsn_gw_start </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
           <td class="paramname"><em>gw</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2291,7 +2954,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_stop </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
           <td class="paramname"><em>gw</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2317,7 +2980,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cc_mqttsn_gw_tick </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCC__MqttsnGatewayHandle.html">CC_MqttsnGatewayHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="gateway__all_8h.html#a0c82ed657512ac27a3073251f010d799">CC_MqttsnGatewayHandle</a>&#160;</td>
           <td class="paramname"><em>gw</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2337,7 +3000,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 14:02:11 for MQTT-SN Gateway Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['binarydata_277',['BinaryData',['../classcc__mqttsn__gateway_1_1Config.html#af391bf10036dc119d62418ecfafeed05',1,'cc_mqttsn_gateway::Config::BinaryData()'],['../classcc__mqttsn__gateway_1_1Session.html#a39ed7f3049c3e84bf342d138d5d3d354',1,'cc_mqttsn_gateway::Session::BinaryData()']]],
-  ['brokerreconnectreqcb_278',['BrokerReconnectReqCb',['../classcc__mqttsn__gateway_1_1Session.html#ace57f8e8eaced5ec466642541f859abe',1,'cc_mqttsn_gateway::Session']]]
+  ['binarydata_355',['BinaryData',['../classcc__mqttsn__gateway_1_1Config.html#a2aebbf219b8938af39003f510c76a3a9',1,'cc_mqttsn_gateway::Config::BinaryData()'],['../classcc__mqttsn__gateway_1_1Session.html#a8708e95121d9ddbfec36c7173a4fb1dd',1,'cc_mqttsn_gateway::Session::BinaryData()']]],
+  ['brokerreconnectreqcb_356',['BrokerReconnectReqCb',['../classcc__mqttsn__gateway_1_1Session.html#a13c1eae248902824f4871d1680e7c6e4',1,'cc_mqttsn_gateway::Session']]],
+  ['brokersenddatareqcb_357',['BrokerSendDataReqCb',['../classcc__mqttsn__gateway_1_1Session.html#ade8a6df2b5852e200b70ca031e0446aa',1,'cc_mqttsn_gateway::Session']]]
 ];

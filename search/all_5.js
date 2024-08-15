@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['isrunning_97',['isRunning',['../classcc__mqttsn__gateway_1_1Session.html#ac4074b355f723b9cf16c7df90dca2b6e',1,'cc_mqttsn_gateway::Session']]]
+  ['fwdencsessioncreatedreportcb_129',['FwdEncSessionCreatedReportCb',['../classcc__mqttsn__gateway_1_1Session.html#a7f3eeb173021e2bebd5edbbcb4e58c7d',1,'cc_mqttsn_gateway::Session']]],
+  ['fwdencsessiondeletedreportcb_130',['FwdEncSessionDeletedReportCb',['../classcc__mqttsn__gateway_1_1Session.html#ad75b3f3fbb8d555302375a2ae25b82e2',1,'cc_mqttsn_gateway::Session']]]
 ];

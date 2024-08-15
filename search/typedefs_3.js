@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nexttickprogramreqcb_291',['NextTickProgramReqCb',['../classcc__mqttsn__gateway_1_1Gateway.html#a0a2a84f31630c29877224efe42955072',1,'cc_mqttsn_gateway::Gateway::NextTickProgramReqCb()'],['../classcc__mqttsn__gateway_1_1Session.html#a768acb036f31b536cf3bbce83604418e',1,'cc_mqttsn_gateway::Session::NextTickProgramReqCb()']]]
+  ['errorreportcb_378',['ErrorReportCb',['../classcc__mqttsn__gateway_1_1Session.html#a4a6e644c040bb2f3bd16fab845f61fc2',1,'cc_mqttsn_gateway::Session']]]
 ];

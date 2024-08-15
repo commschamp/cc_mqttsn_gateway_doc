@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gateway_302',['Gateway',['../cc_mqttsn_gw_gateway_page.html',1,'']]]
+  ['gateway_404',['Gateway',['../cc_mqttsn_gw_gateway_page.html',1,'']]]
 ];
