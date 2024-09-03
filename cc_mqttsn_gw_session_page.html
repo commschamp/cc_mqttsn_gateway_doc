@@ -445,12 +445,12 @@ Forwarder Encapsulation Support</h1>
 <div class="line">{</div>
 <div class="line">    ... <span class="comment">// Perform the session configuration and set all the necessary callbacks</span></div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line">});</div>
+<div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> my_fwd_enc_session_deleted_report_cb(<span class="keywordtype">void</span>* userData, <a class="code" href="gateway__all_8h.html#a1a903f928f9f0166dd06326da57aa0d0">CC_MqttsnSessionHandle</a> handle)</div>
 <div class="line">{</div>
 <div class="line">    ... <span class="comment">// Remove any reference to handle in the data structures</span></div>
-<div class="line">});</div>
+<div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="gateway__all_8h.html#ac415881691d329807c5492e9b81b84f4">cc_mqttsn_gw_session_set_fwd_enc_session_created_cb</a>(handle, &amp;my_fwd_enc_session_created_report_cb, someDserData);</div>
 <div class="line"><a class="code" href="gateway__all_8h.html#a53ac516ddbbf1050452e9592bac45570">cc_mqttsn_gw_session_set_fwd_enc_session_deleted_cb</a>(handle, &amp;my_fwd_enc_session_deleted_report_cb, someDserData);</div>
