@@ -1,9 +1,15 @@
 var searchData=
 [
-  ['terminationreqcb_183',['TerminationReqCb',['../classcc__mqttsn__gateway_1_1Session.html#a61bf51eecaa90806ce08c821be078b0a',1,'cc_mqttsn_gateway::Session']]],
-  ['tick_184',['tick',['../classcc__mqttsn__gateway_1_1Gateway.html#a656234af2ad8d324f0d3e2595c6826fd',1,'cc_mqttsn_gateway::Gateway::tick()'],['../classcc__mqttsn__gateway_1_1Session.html#a3d3c252c3b9aa9572d2f8f52a4fee3a6',1,'cc_mqttsn_gateway::Session::tick()']]],
-  ['topic_185',['topic',['../structcc__mqttsn__gateway_1_1Config_1_1PredefinedTopicInfo.html#a74c1babea28ad32ba1b4fccb3b276d90',1,'cc_mqttsn_gateway::Config::PredefinedTopicInfo::topic()'],['../structCC__MqttsnPredefinedTopicInfo.html#a930215a0e023b64d9d01a8158fa31841',1,'CC_MqttsnPredefinedTopicInfo::topic()']]],
-  ['topicid_186',['topicId',['../structcc__mqttsn__gateway_1_1Config_1_1PredefinedTopicInfo.html#aa3c0768d8a1138a4cd53834dfaa6160d',1,'cc_mqttsn_gateway::Config::PredefinedTopicInfo::topicId()'],['../structCC__MqttsnPredefinedTopicInfo.html#a70fca3d02f39792bf8b631cc6c5816ae',1,'CC_MqttsnPredefinedTopicInfo::topicId()']]],
-  ['topicidallocrange_187',['topicIdAllocRange',['../classcc__mqttsn__gateway_1_1Config.html#a3fc176f8d5d3a32764fdaad0bc8288c6',1,'cc_mqttsn_gateway::Config']]],
-  ['topicidsrange_188',['TopicIdsRange',['../classcc__mqttsn__gateway_1_1Config.html#a90cdfe749026d7dcf29b789ad227a79e',1,'cc_mqttsn_gateway::Config']]]
+  ['parse_20configuration_0',['Read and Parse Configuration',['../cc_mqttsn_gw_config_page.html#cc_mqttsn_gw_config_page_parse',1,'']]],
+  ['password_1',['password',['../structcc__mqttsn__gateway_1_1Config_1_1AuthInfo.html#a372e7229a0dd80a2d876668058e0be82',1,'cc_mqttsn_gateway::Config::AuthInfo::password'],['../structCC__MqttsnAuthInfo.html#a7570e6ef93ad6193fe970b6a0605bd53',1,'CC_MqttsnAuthInfo::password']]],
+  ['period_2',['period',['../cc_mqttsn_gw_gateway_page.html#cc_mqttsn_gw_gateway_page_adv_period',1,'Advertise Period'],['../cc_mqttsn_gw_config_page.html#cc_mqttsn_gw_config_page_advertise',1,'Advertise Period']]],
+  ['period_20for_20publish_20only_20clients_3',['Keep Alive Period for Publish Only Clients',['../cc_mqttsn_gw_config_page.html#cc_mqttsn_gw_config_page_pub_only_keep_alive',1,'']]],
+  ['port_4',['Broker Address and Port',['../cc_mqttsn_gw_config_page.html#cc_mqttsn_gw_config_page_broker_addr',1,'']]],
+  ['predefined_20topics_5',['predefined topics',['../cc_mqttsn_gw_config_page.html#cc_mqttsn_gw_config_page_predefined_topics',1,'Predefined Topics'],['../cc_mqttsn_gw_session_page.html#cc_mqttsn_gw_session_page_predefined_topics',1,'Predefined Topics']]],
+  ['predefinedtopicinfo_6',['PredefinedTopicInfo',['../structcc__mqttsn__gateway_1_1Config_1_1PredefinedTopicInfo.html',1,'cc_mqttsn_gateway::Config']]],
+  ['predefinedtopics_7',['predefinedTopics',['../classcc__mqttsn__gateway_1_1Config.html#adc3c2f16f9d9324f34407e5a4f2fa126',1,'cc_mqttsn_gateway::Config']]],
+  ['predefinedtopicslist_8',['PredefinedTopicsList',['../classcc__mqttsn__gateway_1_1Config.html#a1d56b92f19a63e0da77bd1676bbbf9fb',1,'cc_mqttsn_gateway::Config']]],
+  ['publish_20only_20client_9',['Publish Only Client',['../cc_mqttsn_gw_session_page.html#cc_mqttsn_gw_session_page_publish_only',1,'']]],
+  ['publish_20only_20clients_10',['Keep Alive Period for Publish Only Clients',['../cc_mqttsn_gw_config_page.html#cc_mqttsn_gw_config_page_pub_only_keep_alive',1,'']]],
+  ['pubonlykeepalive_11',['pubOnlyKeepAlive',['../classcc__mqttsn__gateway_1_1Config.html#a715e1cf347c9d0008e32d2db67b1a5dc',1,'cc_mqttsn_gateway::Config']]]
 ];

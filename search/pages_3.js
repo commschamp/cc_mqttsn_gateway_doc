@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['session_406',['Session',['../cc_mqttsn_gw_session_page.html',1,'']]]
+  ['mqtt_20sn_20gateway_20library_0',['MQTT-SN Gateway Library',['../index.html',1,'']]]
 ];
